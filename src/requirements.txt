@@ -1,0 +1,14 @@
+/*
+	Author: ThangLMb
+	Created: April 10th, 2021
+	Description: Armv7, adnroid,
+*/
+1. paddle-lite 2.9
+	 
+2. adk r20b
+
+3. Opencv
+
+4. snpe 1.52
+
+
