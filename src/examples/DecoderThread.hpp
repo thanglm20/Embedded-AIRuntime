@@ -10,6 +10,9 @@
 #include "FrameManager.hpp"
 #include <pthread.h>
 #include <signal.h>
+
+#define EXPECTED_FPS 30
+
 class DecoderThread
 {
 private:

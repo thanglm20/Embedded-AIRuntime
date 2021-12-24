@@ -4748,7 +4748,13 @@ CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o: ../src/examples/Decode
   /usr/include/x86_64-linux-gnu/bits/sigstack.h \
   /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigthread.h
+  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h
 
 CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o: ../src/examples/FrameManager.cpp \
   /usr/include/stdc-predef.h \

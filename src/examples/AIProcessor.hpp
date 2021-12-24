@@ -9,6 +9,7 @@
 #include "FrameManager.hpp"
 #include <pthread.h>
 #include <signal.h>
+#include <chrono>
 class AIProcessor
 {
 public:

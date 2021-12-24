@@ -39,10 +39,10 @@ AIUserFactory::~AIUserFactory()
 STATUS AIUserFactory::run(const Mat& img, 
                             vector<ObjectTrace>& objects,
                             float threshold)
-{
+{   
     if(!this->m_flInitiated)
     {
-        if(STATUS::SUCCESS != this->m_executor->init())
+        if(this->m_executor == nullptr || STATUS::SUCCESS != this->m_executor->init())
         {
             cout << "Init AI User Factory failed\n";
             return STATUS::FAIL;
@@ -91,7 +91,7 @@ AIExecutor* AIExecutor::create(airuntime::ExecutorType executor,
         #ifdef USE_NCNN
         case 1:
         {
-            exe = new NcnnExecutor(device, algType,pathLabel, modelWeight, modelParam );
+            exe = new NcnnExecutor(device, algType, pathLabel, modelWeight, modelParam );
             break;
         }
         #endif

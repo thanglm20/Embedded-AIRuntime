@@ -5,6 +5,32 @@
 */
 #include "NcnnExecutor.hpp"
 
+static int num_line = 0;
+static std::string read_file(const char* path, bool count_line)
+{
+    std::string result = "";
+    std::ifstream f(path);
+    //check file exist | true = exist
+    if (!f.good()) return result;
+    else
+    {
+        std::string temp;
+        while (std::getline(f, result))
+        {
+            temp.append(result);
+            // std::cout << result;
+            if (count_line == true)
+            {
+                num_line++;
+            }
+        }
+        result = temp;
+        // Close the file
+        f.close();
+    }
+    num_line = 0;
+    return result;
+}
 
 NcnnExecutor::NcnnExecutor(airuntime::DeviceType device, 
                             airuntime::AlgTypeAI algType,
