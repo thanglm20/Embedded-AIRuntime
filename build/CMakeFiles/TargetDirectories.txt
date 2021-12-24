@@ -1,0 +1,3 @@
+/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles/edit_cache.dir
+/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles/rebuild_cache.dir
+/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles/ai_infer.dir

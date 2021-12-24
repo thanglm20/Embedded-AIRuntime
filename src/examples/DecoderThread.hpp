@@ -6,7 +6,7 @@
 #ifndef DecoderThread_hpp
 #define DecoderThread_hpp
 
-#include "DecodeFrame.hpp"
+#include "Decoder.hpp"
 #include "FrameManager.hpp"
 #include <pthread.h>
 #include <signal.h>
@@ -14,7 +14,7 @@ class DecoderThread
 {
 private:
     /* data */
-    DecodeFrame* m_decoder;
+    Decoder* m_decoder;
     FrameManager* m_frameManager = nullptr;
     pthread_mutex_t m_mutex = PTHREAD_MUTEX_INITIALIZER;
     pthread_t m_thread;

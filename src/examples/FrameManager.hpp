@@ -29,41 +29,6 @@ public:
     unsigned long long getFrameCounter();
 };
 
-unsigned long long FrameManager::iFrameCounter = 0;
 
-FrameManager::FrameManager(){
-    iFrameCounter = 0;
-    this->m_fps = 0;
-}
-FrameManager::~FrameManager(){;}
-
-void FrameManager::updateFrame(const cv::Mat& frame)
-{
-    frame.copyTo(this->m_frame);
-    iFrameCounter++;
-    if(iFrameCounter == ULONG_LONG_MAX)
-        iFrameCounter = 0;
-}
-
-void FrameManager::updateFrame(const cv::Mat& frame, float fps)
-{
-    frame.copyTo(this->m_frame);
-    this->m_fps = fps;
-    iFrameCounter++;
-    if(iFrameCounter == ULONG_LONG_MAX)
-        iFrameCounter = 0;
-}
-cv::Mat FrameManager::getFrame()
-{
-    return this->m_frame;
-}
-float FrameManager::getFps()
-{
-    return this->m_fps;
-}
-unsigned long long FrameManager::getFrameCounter()
-{
-    return iFrameCounter;
-}
 
 #endif

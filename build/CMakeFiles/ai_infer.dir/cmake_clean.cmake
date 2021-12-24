@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/examples/main.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/examples/main.cpp.o.d"
+  "ai_infer"
+  "ai_infer.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/ai_infer.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

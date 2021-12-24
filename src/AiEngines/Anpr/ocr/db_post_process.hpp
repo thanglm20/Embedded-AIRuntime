@@ -16,7 +16,6 @@
 #define db_post_process_hpp
 
 #include <math.h>
-
 #include <iostream>
 #include <map>
 #include <vector>
@@ -25,6 +24,7 @@
 #include "opencv2/core.hpp"
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/imgproc.hpp"
+
 
 template <class T> T clamp(T x, T min, T max) {
   if (x > max)

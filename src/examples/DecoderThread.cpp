@@ -4,6 +4,12 @@
     Created: Dec 21th, 2021
 */
 
+#ifdef USE_FFMPEG
+#include "FFmpegDecoder.hpp"
+#else
+#include "OpencvDecoder.hpp"
+#endif
+
 #include "DecoderThread.hpp"
 #include <chrono>
 
@@ -39,8 +45,14 @@ void* DecoderThread::threadFunc(void* args)
 void DecoderThread::process()
 {
     std::cout << "Creating decoder thread\n";
-    this->m_decoder = new DecodeFrame();
-    const char* video_file = (char*)"/data/thanglmb/videos/road.mp4";
+
+    #ifdef USE_FFMPEG
+        this->m_decoder = new FFmpegDecoder();
+    #else 
+        this->m_decoder = new OpencvDecoder();
+    #endif
+
+    const char* video_file = (char*)"/home/thanglmb/Downloads/abc.mp4";
     int ret = this->m_decoder->open(video_file);
 
     if(ret == 0)
@@ -56,8 +68,8 @@ void DecoderThread::process()
             pthread_mutex_lock(&this->m_mutex);
             this->m_frameManager->updateFrame(frame, fps);
             pthread_mutex_unlock(&this->m_mutex);
-            // std::cout << "Decoded frame: " << frame.cols  << "x" << frame.rows
-            //     << ", frame " << this->m_frameManager->getFrameCounter() << std::endl;
+            std::cout << "Decoded frame: " << frame.cols  << "x" << frame.rows
+                << ", frame " << this->m_frameManager->getFrameCounter() << std::endl;
         }
         else 
         {

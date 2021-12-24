@@ -23,7 +23,7 @@ cmake ..
 make
 ./tracker
 # References
-ncnn: https://github.com/Tencent/ncnn
-snpe: 
-paddle: 
+1. ncnn: https://github.com/Tencent/ncnn
+2. snpe: 
+3. paddle: https://paddle-lite.readthedocs.io/zh/develop/quick_start/release_lib.html
 

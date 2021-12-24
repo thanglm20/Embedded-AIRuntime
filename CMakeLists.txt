@@ -42,25 +42,35 @@ set( NCNN_LIB libncnn.a)
 link_directories(${CMAKE_SOURCE_DIR}/libncnn-linux_x86_64/lib)
 include_directories(${CMAKE_SOURCE_DIR}/libncnn-linux_x86_64/include)
 
+#add lib paddle-lite
+set( PADDLE_LITE_LIB libpaddle_light_api_shared.so)
+link_directories(${CMAKE_SOURCE_DIR}/libpaddlelite/lib)
+include_directories(${CMAKE_SOURCE_DIR}/libpaddlelite/include)
 
 include_directories(${CMAKE_SOURCE_DIR}/src)
-include_directories(${CMAKE_SOURCE_DIR}/src/AiCore)
-include_directories(${CMAKE_SOURCE_DIR}/src/AiCore/utils)
-include_directories(${CMAKE_SOURCE_DIR}/src/AiCore/snpe)
-include_directories(${CMAKE_SOURCE_DIR}/src/AiCore/snpe/detector)
-include_directories(${CMAKE_SOURCE_DIR}/src/AiCore/ncnn)
-include_directories(${CMAKE_SOURCE_DIR}/src/AiCore/sort-tracker)
-include_directories(${CMAKE_SOURCE_DIR}/src/AiEngines/traffic)
+
 
 file( GLOB SOURCES  
-src/AiCore/utils/*.cpp
-src/AiCore/ncnn/*.cpp	
-src/AiCore/snpe/*.cpp	
-src/AiCore/snpe/detector/*.cpp	
-src/AiCore/sort-tracker/*.cpp	
-src/AiCore/*.cpp
-src/AiEngines/traffic/*.cpp	
-src/main/main.cpp
+src/examples/main.cpp
+src/examples/OpencvDecoder.cpp
+src/examples/DecoderThread.cpp
+src/examples/FrameManager.cpp
+src/examples/TrafficDetector.cpp
+
+src/AiCore/AIUserFactory.cpp
+src/AiCore/snpe/SnpeExecutor.cpp
+src/AiCore/snpe/SnpeCommLib.cpp
+src/AiCore/snpe/Util.cpp
+src/AiCore/snpe/SnpeMobilenetSSD.cpp
+src/AiCore/ncnn/NcnnExecutor.cpp
+src/AiCore/sort-tracker/Hungarian.cpp
+src/AiCore/sort-tracker/KalmanTracker.cpp
+src/AiCore/sort-tracker/ObjectTracker.cpp
+src/AiCore/sort-tracker/TrackerManager.cpp
+src/AiCore/sort-tracker/RoadLine.cpp
+src/AiCore/sort-tracker/ObjectTracking.cpp
+
+
 )
                     
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -70,6 +80,7 @@ target_link_libraries(${PROJECT_NAME}
 ${OpenCV_LIBS}
 ${SNPE_LIB}
 ${NCNN_LIB}
+${PADDLE_LITE_LIB}
 ${libHtpPrepare}
 ${libomp}
  -Wall -lm -lpthread -lstdc++ -std=c++14 -lgomp -Wcpp -fPIC -march=x86-64

@@ -22,9 +22,6 @@
 #include "DlSystem/DlVersion.hpp"
 #include "DlSystem/DlEnums.hpp"
 #include "DlSystem/String.hpp"
-#include "Util.hpp"
-#include <EGL/egl.h>
-#include <GLES2/gl2.h>
 #include "DlSystem/PlatformConfig.hpp"
 
 // include my header
@@ -32,7 +29,12 @@
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include "Util.hpp"
+#include "../AITypeData.hpp"
 
+#ifdef ANDROID 
+#include <EGL/egl.h>
+#include <GLES2/gl2.h>
+#endif
 
 #define SNPE_RUNTIME zdl::DlSystem::Runtime_t::DSP
 #define SNPE_FALLBACK zdl::DlSystem::Runtime_t::GPU

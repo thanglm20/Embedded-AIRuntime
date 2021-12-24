@@ -6,16 +6,16 @@
 
 
 #include <iostream>
-
-#include "AIProcessor.hpp"
+#include <unistd.h>
+// #include "AIProcessor.hpp"
 #include "DecoderThread.hpp"
-
+#include "TrafficDetector.hpp"
 int main(int argc, char** args){
 
 
     std::cout << "=============>Main<==================\n";
     FrameManager* frameManager = new FrameManager();
-    AIProcessor* processor = new AIProcessor(frameManager);
+    AIProcessor* processor = new TrafficDetector(frameManager);
     DecoderThread* decoder = new DecoderThread(frameManager);
     
     processor->run();
@@ -23,7 +23,16 @@ int main(int argc, char** args){
     
     while(1)
     {
-        sleep(1);
+        cv::Mat frame = frameManager->getFrame();
+        if(!frame.empty())
+        {
+            imshow("frame", frame);
+            char key = cv::waitKey(1);
+            if(key == 'q') break;
+        }
+            
+        
+        // sleep(1);
     }
     return 0;
 }

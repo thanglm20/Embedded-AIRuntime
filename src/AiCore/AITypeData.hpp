@@ -19,6 +19,9 @@
 using namespace std;
 using namespace cv;
 
+
+// #define ANDROID
+
 #define USE_SNPE
 // #define USE_NCNN
 #define USE_TFLITE
