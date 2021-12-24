@@ -1,5 +1,5 @@
 # Introduction
-	Branch master
+	Branch r1.0
 # Requirements
 1. paddle-lite 2.9
 	 
