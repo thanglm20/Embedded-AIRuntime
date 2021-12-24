@@ -8,7 +8,7 @@
 #define SNPEMOBILENETSSD_H
 
 #include "SnpeCommLib.hpp"
-#include "AiTypeData.hpp"
+#include "../AITypeData.hpp"
 
 
 
@@ -21,11 +21,10 @@ public:
     SnpeMobilenetSSD(/* args */);
     ~SnpeMobilenetSSD();
     int initSnpeMobilenetSSD(std::string containerPath);
-    int initSnpeMobilenetSSD(std::string containerPath, std::string targetDevice);
+    int initSnpeMobilenetSSD(std::string containerPath, airuntime::DeviceType device);
     int executeSnpeMobilenetSSD(const cv::Mat& img, std::vector<std::string>& labels, std::vector<ObjectTrace>& objects, float thres_detect);
-
+    int executeSnpeMobilenetSSD(const uint8_t* rawData, int w, int h, std::vector<std::string>& labels, 
+                                std::vector<ObjectTrace>& objects, float thres_detect);
 };
-
-
 
 #endif

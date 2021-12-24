@@ -152,7 +152,8 @@ Oppose::Oppose(/* args */settingsOppose settings)
     //if(this->detector->initObjectDetector("ncnn", "traffic", "CPU") != STATUS_SUCCESS)
     if(this->detector->initObjectDetector("snpe", "traffic", "CPU") != STATUS_SUCCESS)
     {
-        LOG_FAIL("Init detector failed");            
+        LOG_FAIL("Init detector failed");
+            
     }
 }
 

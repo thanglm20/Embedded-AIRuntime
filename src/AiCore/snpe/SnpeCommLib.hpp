@@ -22,16 +22,10 @@
 #include "DlSystem/DlVersion.hpp"
 #include "DlSystem/DlEnums.hpp"
 #include "DlSystem/String.hpp"
-#include "DlSystem/PlatformConfig.hpp"
-
 #include "Util.hpp"
-
-
-#define ANDROID 0
-#if(ANDROID == 1)
 #include <EGL/egl.h>
 #include <GLES2/gl2.h>
-#endif
+#include "DlSystem/PlatformConfig.hpp"
 
 // include my header
 #include "opencv2/core/core.hpp"
@@ -49,6 +43,8 @@ typedef struct snpeBuilders
     zdl::DlSystem::Runtime_t runtime;
 }snpeBuilders;
 
+bool SetAdspLibraryPath(std::string nativeLibPath);
+
 std::unique_ptr<zdl::SNPE::SNPE> setBuilderSNPE(std::string containerPath, std::vector<std::string> outputLayers, zdl::DlSystem::Runtime_t target_device);
 //GPU_FLOAT16
 zdl::DlSystem::Runtime_t checkRuntime(zdl::DlSystem::Runtime_t runtime);
@@ -57,8 +53,10 @@ std::unique_ptr<zdl::SNPE::SNPE> setBuilderOptions(std::unique_ptr<zdl::DlContai
                                                     zdl::DlSystem::RuntimeList runtimeList,
                                                     zdl::DlSystem::StringList outputs);
 std::unique_ptr<zdl::DlSystem::ITensor> convertMat2BgrFloat(std::unique_ptr<zdl::SNPE::SNPE>& snpe,const cv::Mat& img);
-std::unique_ptr<zdl::DlSystem::ITensor> convertMat2BgrFloatCHW(std::unique_ptr<zdl::SNPE::SNPE>& snpe,const cv::Mat& img);
+std::unique_ptr<zdl::DlSystem::ITensor> convertMat2BgrFloat1(std::unique_ptr<zdl::SNPE::SNPE>& snpe);
+
 std::unique_ptr<zdl::DlSystem::ITensor> loadInputTensorByte(std::unique_ptr<zdl::SNPE::SNPE> snpe, std::string& fileLine);
 std::unique_ptr<zdl::DlSystem::ITensor> loadInputTensorByteToFloat(std::unique_ptr<zdl::SNPE::SNPE>& snpe, std::string& fileLine);
+std::unique_ptr<zdl::DlSystem::ITensor> creatTensorBGR(std::unique_ptr<zdl::SNPE::SNPE>& snpe,const uint8_t* rawData);
 
 #endif

@@ -37,18 +37,15 @@ static std::string read_file(const char* path, bool count_line)
 NcnnDetector::NcnnDetector()
 {
     this->ncnnNet = new ncnn::Net();
-    #if(USE_VULKAN_COMPUTE == 1)
     this->g_blob_pool_allocator_detect = new ncnn::UnlockedPoolAllocator();
     this->g_workspace_pool_allocator_detect = new ncnn::PoolAllocator();
     this->g_blob_pool_allocator_detect->set_size_compare_ratio(0.0f);
     this->g_workspace_pool_allocator_detect->set_size_compare_ratio(0.5f);
-    #endif
 }
 NcnnDetector::~NcnnDetector()
 {
     if (this->ncnnNet) 
         delete this->ncnnNet;
-    #if(USE_VULKAN_COMPUTE == 1)
     if (this->g_blob_pool_allocator_detect)
         delete this->g_blob_pool_allocator_detect;
     if (this->g_workspace_pool_allocator_detect)
@@ -61,12 +58,22 @@ NcnnDetector::~NcnnDetector()
         delete this->g_blob_vkallocator;
     if (this->g_staging_vkallocator)
         delete this->g_staging_vkallocator;
-    #endif
 }
 int NcnnDetector::initNcnnNetwork(const char* model_bin, const char* model_param)
 {
     this->ncnnNet->opt.lightmode = true;
     this->ncnnNet->opt.num_threads = 4; //You need to compile with libgomp for multi thread support
+    this->ncnnNet->opt.blob_allocator = this->g_blob_pool_allocator_detect;
+    this->ncnnNet->opt.workspace_allocator = this->g_workspace_pool_allocator_detect;
+    // this->ncnnNet->opt.use_vulkan_compute = true; //You need to compile with libvulkan for gpu support
+    // this->ncnnNet->opt.use_winograd_convolution = true;
+    // this->ncnnNet->opt.use_sgemm_convolution = true;
+    // this->ncnnNet->opt.use_fp16_packed = true;
+    // this->ncnnNet->opt.use_fp16_storage = true;
+    // this->ncnnNet->opt.use_fp16_arithmetic = true;
+    // this->ncnnNet->opt.use_packing_layout = true;
+    // this->ncnnNet->opt.use_shader_pack8 = false;
+    // this->ncnnNet->opt.use_image_storage = false;
     int ret = this->ncnnNet->load_param(model_param);
     if (ret != 0)
     {
@@ -116,10 +123,9 @@ int NcnnDetector::initNcnnNetwork(const char* model_bin, const char* model_param
 
 
     this->ncnnNet->opt.lightmode = true;
-    this->ncnnNet->opt.num_threads = 4; //You need to compile with libgomp for multi thread support
-    #if(USE_VULKAN_COMPUTE == 1)
     this->ncnnNet->opt.blob_allocator = this->g_blob_pool_allocator_detect;
     this->ncnnNet->opt.workspace_allocator = this->g_workspace_pool_allocator_detect;
+    this->ncnnNet->opt.num_threads = 4; //You need to compile with libgomp for multi thread support
     if(target_device == "GPU")
     {
 
@@ -141,7 +147,6 @@ int NcnnDetector::initNcnnNetwork(const char* model_bin, const char* model_param
         this->ncnnNet->opt.use_shader_pack8 = false;
         this->ncnnNet->opt.use_image_storage = false;
     }
-    #endif
     int ret = this->ncnnNet->load_param(model_param);
     if (ret != 0)
     {
@@ -187,7 +192,6 @@ int NcnnDetector::initNcnnNetwork(const char* model_bin, const char* model_param
 }
 int NcnnDetector::executeNcnnDetector(const cv::Mat& img, std::vector<std::string>& labels, std::vector<ObjectTrace>& objects, float thres_detect)
 {
-    #if(USE_VULKAN_COMPUTE == 1)
     this->g_blob_pool_allocator_detect->clear();
     this->g_workspace_pool_allocator_detect->clear();
     if (this->ncnnNet->opt.use_vulkan_compute)
@@ -196,7 +200,7 @@ int NcnnDetector::executeNcnnDetector(const cv::Mat& img, std::vector<std::strin
         this->g_staging_vkallocator->clear();
         this->ncnnNet->set_vulkan_device(this->g_vkdev);
     }
-    #endif
+
     int img_w = img.cols;
     int img_h = img.rows;
     

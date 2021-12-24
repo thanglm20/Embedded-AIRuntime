@@ -16,7 +16,35 @@
 #include "opencv2/opencv.hpp"
 #include <chrono> 
 
-using namespace std::chrono; 
+using namespace std;
+using namespace cv;
+
+#define USE_SNPE
+// #define USE_NCNN
+#define USE_TFLITE
+#define USE_MNN
+
+namespace airuntime{
+    enum class ExecutorType {SNPE = 0, NCNN = 1, TFLITE = 2, MNN = 3};
+    enum class DeviceType {CPU = 0, GPU = 1, DSP = 2};
+    enum class AlgTypeAI {DETECT = 0, CLASSIFY = 1};
+    
+}
+typedef struct ObjectTrace
+{
+    cv::Rect2f rect; // xmin, ymin, width, height
+    std::string label;
+    float score;
+    int obj_id;   
+}ObjectTrace;
+
+enum STATUS {
+        FAIL = -1,
+        SUCCESS = 0,
+        UNSUPPORTED = 2,
+        INVALID_ARGS = 3,
+    };
+#define SNPE_LIB_PATH "/data/snpe/dsp/lib"
 
 #define PATH_DICTIONARY "/data/thanglmb/models/paddle/anpr.txt"
 
@@ -29,11 +57,11 @@ using namespace std::chrono;
 #define DIR_OCR_DET_MALAY "/data/thanglmb/models/malay-det.nb"
 #define DIR_OCR_RECOG_MALAY "/data/thanglmb/models/malay-rec.nb"
 
-#define DIR_MODEL_OBJECTDETECION_NCNN "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/models/" // G1
-#define DIR_LABEL_OBJECTDETECION_NCNN "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/models/" // G1
+#define DIR_MODEL_OBJECTDETECION_NCNN "/data/thanglmb/models/ncnn/" // G1
+#define DIR_LABEL_OBJECTDETECION_NCNN "/data/thanglmb/models/ncnn/" // G1
 
-#define DIR_MODEL_OBJECTDETECION_SNPE "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/models/" // G2
-#define DIR_LABEL_OBJECTDETECION_SNPE "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/models/" // G2
+#define DIR_MODEL_OBJECTDETECION_SNPE "/data/thanglmb/models/snpe/" // G2
+#define DIR_LABEL_OBJECTDETECION_SNPE "/data/thanglmb/models/snpe/" // G2
 
 #define DIR_MODEL_OBJECTCLASSIFICATION "/system/app/ai_config/models/snpe/" //G2
 #define DIR_LABEL_OBJECTCLASSIFICATION "/system/app/ai_config/models/snpe/" //G2
@@ -44,17 +72,6 @@ using namespace std::chrono;
 
 #define DIR_MODEL_OBJECTDETECION_MNN "/system/app/ai_config/models/mnn/"
 #define DIR_LABEL_OBJECTDETECION_MNN "/system/app/ai_config/models/mnn/"
-
-struct ObjectTrace
-{
-    cv::Rect2f rect; // xmin, ymin, width, height
-    std::string label;
-    float score;
-    int obj_id;   
-};
-
-#define STATUS_FAILED -1
-#define STATUS_SUCCESS 0
 
 #define LOG_INFO(log) std::cout << "[INFO] - " << log << std::endl;
 #define LOG_SUCCESS(log) std::cout << "[SUCCESS] - " << log << std::endl;

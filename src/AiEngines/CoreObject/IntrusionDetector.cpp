@@ -43,6 +43,7 @@ void IntrusionDetector::updateIntrusion(Mat& frame, vector<bbox_t> detected, vec
             vector<TrackingObject> tracks;
             this->tracking->process(regions, in_frame, tracks);
 
+            printf("Object Tracking: %d\n", tracks.size() );
             for (outDataIntrusion &track: this->listTrack) 
             {
                 track.isOutOfFrame = true;
@@ -50,8 +51,10 @@ void IntrusionDetector::updateIntrusion(Mat& frame, vector<bbox_t> detected, vec
             }
 
             // draw box intrusion
-            for( int i = 0; i < this->regionsSet.size(); i++)           
+            for( int i = 0; i < this->regionsSet.size(); i++)
+            {
                 line( in_frame, this->regionsSet[i],  this->regionsSet[(i+1) % this->regionsSet.size()], Scalar( 0, 0, 200), 2, LINE_AA );
+            }
             std::vector<std::vector<cv::Point> > fillContAll;
             fillContAll.push_back(this->regionsSet);
             cv::Mat layer = cv::Mat::zeros(in_frame.size(), CV_8UC3);
@@ -104,6 +107,8 @@ void IntrusionDetector::updateIntrusion(Mat& frame, vector<bbox_t> detected, vec
                                 obj_in.isEvent = true;
                                 output.push_back(obj_in); // push to outdata event
                                 rectangle(in_frame, track.m_brect.boundingRect(), Scalar(0, 255, 0), 3, 8);
+                                printf("Detected object go inside\n");
+                                
                             }
                             this->listTrack.push_back(obj_in); // push to list in
                         } 

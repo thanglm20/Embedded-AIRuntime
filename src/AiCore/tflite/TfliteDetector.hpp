@@ -13,13 +13,6 @@
 #include "AiTypeData.hpp"
 
 
-// #define TFLITE_MINIMAL_CHECK(x)                                     \
-//     if (!(x))                                                       \
-//     {                                                               \
-//         fprintf(stderr, "Error at %s:%d\n", __FILE__, __LINE__);    \
-//         exit(1);                                                    \
-//     } 
-
 typedef struct tflite_interpreter
 {
     std::unique_ptr<tflite::FlatBufferModel> model;

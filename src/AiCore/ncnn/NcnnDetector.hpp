@@ -33,14 +33,10 @@
 #include "AiTypeData.hpp"
 #include <unistd.h>
 
-#define USE_VULKAN_COMPUTE 0
-
 class NcnnDetector
 {
     private:
         ncnn::Net* ncnnNet = nullptr;
-
-        #if(USE_VULKAN_COMPUTE == 1)
         ncnn::UnlockedPoolAllocator* g_blob_pool_allocator_detect = nullptr;
         ncnn::PoolAllocator* g_workspace_pool_allocator_detect = nullptr;
         // HieuPV add code
@@ -48,7 +44,6 @@ class NcnnDetector
         ncnn::VulkanDevice* g_vkdev = nullptr;
         ncnn::VkAllocator* g_blob_vkallocator = nullptr;
         ncnn::VkAllocator* g_staging_vkallocator = nullptr;
-        #endif
         int width_model;
         int height_model;
     public:

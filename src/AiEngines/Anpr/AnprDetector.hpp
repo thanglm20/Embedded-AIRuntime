@@ -5,26 +5,23 @@
 */
 #ifndef AnprDetector_hpp
 #define AnprDetector_hpp
-#define VEHICLE_DETECTION 0
-#include "ObjectDetector.hpp"
-#include "VehicleDetector.hpp"
 
-#define THRES_DETECT_PLATE 0.5
-enum class Nations {VN, VnSquare, VnRect, US, MALAY };
+#include "../../AiCore/AITypeData.hpp"
+#include "../../AiCore/AIUserFactory.hpp"
+
+
+#define THRES_DETECT 0.5
+enum class Nations {VN ,VnRect, VnSquare, US, MALAY };
 
 class AnprDetector
 {
 private:
     /* data */
-    ObjectDetector* obj_detector = nullptr;
-    #if(VEHICLE_DETECTION == 1)
-        VehicleDetector* vehicle = nullptr;
-    #endif
+    airuntime::aicore::AIUserFactory* m_plateDetector;
 public:
-    AnprDetector(/* args */);
-    ~AnprDetector();
-    int init(Nations nation);
-    int detect ( cv::Mat& img, std::vector<ObjectTrace>& objects);
+    AnprDetector (Nations nation);
+    ~AnprDetector ();
+    int detect (cv::Mat& img, std::vector<ObjectTrace>& objects);
     
 };
 

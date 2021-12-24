@@ -4,10 +4,13 @@
     Date: June 24, 2021
 */
 #include "AnprRecognizer.hpp"
+namespace airuntime{
+    namespace aiengine{
 
-AnprRecognizer::AnprRecognizer(/* args */)
+AnprRecognizer::AnprRecognizer(Nations nation)
 {
-    this->detector = new AnprDetector();
+    this->m_nations = nation;
+    this->detector = new AnprDetector(this->m_nations);
     this->tracker = new ObjectTracking();
     this->listPlateTracks.clear();
 }
@@ -24,34 +27,30 @@ AnprRecognizer::~AnprRecognizer()
 
     if(this->tracker != nullptr) delete this->tracker;
 }
-int AnprRecognizer::init(Nations nation)
+int AnprRecognizer::init()
 {
-    this->nations = nation;
-    // init detector number plate ( VN, US, ...)
-    if(!this->detector->init(nation))
-            return STATUS_FAILED;
-
+    
     // init ocr
-    if(nation == Nations::VN)
+    if(this->m_nations == Nations::VN)
     {
         std::cout << "OCR model: " << DIR_OCR_DET_VN << ", " << DIR_OCR_RECOG_VN << endl;
-        if(initVn(DIR_OCR_DET_VN, DIR_OCR_RECOG_VN) != STATUS_SUCCESS)
-            return STATUS_FAILED;
+        if(initVn(DIR_OCR_DET_VN, DIR_OCR_RECOG_VN) != STATUS::SUCCESS)
+            return STATUS::FAIL;
         
     }
-    else if(nation == Nations::US)   
+    else if(this->m_nations == Nations::US)   
     {
         std::cout << "OCR model: " << DIR_OCR_DET_US << ", " << DIR_OCR_RECOG_US << endl;
-        if(initUS(DIR_OCR_DET_US, DIR_OCR_RECOG_US) != STATUS_SUCCESS)
-            return STATUS_FAILED;
+        if(initUS(DIR_OCR_DET_US, DIR_OCR_RECOG_US) != STATUS::SUCCESS)
+            return STATUS::FAIL;
     }    
-    else if(nation == Nations::MALAY)   
+    else if(this->m_nations == Nations::MALAY)   
     {
         std::cout << "OCR model: " << DIR_OCR_DET_MALAY << ", " << DIR_OCR_RECOG_MALAY << endl;
-        if(initMalay(DIR_OCR_DET_MALAY, DIR_OCR_RECOG_MALAY) != STATUS_SUCCESS)
-            return STATUS_FAILED;
+        if(initMalay(DIR_OCR_DET_MALAY, DIR_OCR_RECOG_MALAY) != STATUS::SUCCESS)
+            return STATUS::FAIL;
     } 
-    return STATUS_SUCCESS;
+    return STATUS::SUCCESS;
 }
 
 int AnprRecognizer::initVn(std::string pathDet, std::string pathRecog)
@@ -75,7 +74,7 @@ int AnprRecognizer::initVn(std::string pathDet, std::string pathRecog)
     this->ocrVN->dict.insert(this->ocrVN->dict.begin(), "#"); // blank char for ctc
     this->ocrVN->dict.push_back(" ");
     printf("[INFO] - Init OCR Vietnam successfully\n");
-    return STATUS_SUCCESS;
+    return STATUS::SUCCESS;
 }
 
 int AnprRecognizer::initUS(std::string pathDet, std::string pathRecog)
@@ -98,7 +97,7 @@ int AnprRecognizer::initUS(std::string pathDet, std::string pathRecog)
     this->ocrUS->dict.insert(this->ocrUS->dict.begin(), "#"); // blank char for ctc
     this->ocrUS->dict.push_back(" ");
     printf("[INFO] - Init model text recognition in US successfully\n");
-    return STATUS_SUCCESS;
+    return STATUS::SUCCESS;
 }
 
 int AnprRecognizer::initMalay(std::string pathDet, std::string pathRecog)
@@ -120,7 +119,7 @@ int AnprRecognizer::initMalay(std::string pathDet, std::string pathRecog)
     this->ocrMalay->dict.insert(this->ocrMalay->dict.begin(), "#"); // blank char for ctc
     this->ocrMalay->dict.push_back(" ");
     printf("[INFO] - Init model text recognition in Malaysia successfully\n");
-    return STATUS_SUCCESS;
+    return STATUS::SUCCESS;
 }
 
 std::string AnprRecognizer::readText( cv::Mat& img, Nations nation, float& confidence)
@@ -157,55 +156,30 @@ std::string AnprRecognizer::readText( cv::Mat& img, Nations nation, float& confi
         }
 
         float score = 0;
-        std::regex vnRect5("[0-9]{2}[A-Z][0-9]{5}");
-        std::regex vnRect4("[0-9]{2}[A-Z][0-9]{4}");
-        std::regex VnSquareBelowLine5("[0-9]{5}");
         if(rec_text.size() > 0)
         { 
             for (int i = 0; i < rec_text.size(); i++)
             {                       
                 if(!isnan(rec_text_score[i]))
+                {
+                    if(rec_text_score[i] < THRESHOLD_OCR)
+                        return "Unknown";
                     score += rec_text_score[i];
-                // add '-', '.' to anpr Vietnam
-                // full text license
-                if(this->nations == Nations::VN)
-                {
-                    if(i==0)
-                    {
-                        if(std::regex_match(rec_text[i], vnRect5))
-                        {
-                            rec_text[i].insert(3, "-");
-                            rec_text[i].insert(7, ".");
-                        }
-                        else if(std::regex_match(rec_text[i], vnRect4))
-                        {
-                            rec_text[i].insert(3, "-");
-                        } 
-                    }              
-                    if(i >= 1)
-                    {
-                        if(std::regex_match(rec_text[i], VnSquareBelowLine5))
-                        {
-                            rec_text[i].insert(3, ".");
-                        } 
-                    }
-                    textOut += "-" + rec_text[i];
+                    
                 }
-                else
-                {
-                    textOut += " " + rec_text[i];
-                }           
-            }
-            
-            textOut.erase(textOut.begin() + 0);
+                    
+                textOut += rec_text[i];                       
+            }          
             confidence = score / rec_text.size();
-            if(this->nations == Nations::VN)
+            if(this->m_nations == Nations::VN)
             {   
-                std::regex validLicense ("[0-9]{2}[A-Z]");
-                if(!std::regex_match(textOut.begin(), textOut.begin() + 3, validLicense))
+                std::regex validLicense ("[0-9]{3}");
+
+                if(textOut.length() > 9 || textOut.length() < 5)
                     return "Unknown";
-                if(textOut.length() < 5 || textOut.length() > 12)
-                    return "Unknown";
+                
+                if(!std::regex_match(textOut.end() - 3, textOut.end(), validLicense))
+                    return "Unknown";                
             }
             
         }
@@ -238,10 +212,7 @@ int AnprRecognizer::recognize( cv::Mat& img, std::vector<PlateInfor>& plates)
             std::vector<ObjectTrace> objPlates;
             auto start = std::chrono::high_resolution_clock::now();
             this->detector->detect(img, objPlates);
-            std::cout << "Detected object: " << objPlates.size() << endl;
-            auto end = std::chrono::high_resolution_clock::now();    
-            auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
-            cout << "Time detect: " <<  duration.count() << endl;
+            
             plates.clear();
         
             for(int i = 0; i < objPlates.size(); i++)
@@ -307,9 +278,9 @@ int AnprRecognizer::recognize( cv::Mat& img, std::vector<PlateInfor>& plates)
     else
     {
         LOG_FAIL("Execute Anpr recognizer failed, please check your input");
-        return STATUS_FAILED; 
+        return STATUS::FAIL; 
     }
-    return STATUS_SUCCESS;
+    return STATUS::SUCCESS;
 }
 
 int AnprRecognizer::trackAnpr(Mat &img, std::vector<PlateInfor>& plates)
@@ -493,9 +464,9 @@ int AnprRecognizer::trackAnpr(Mat &img, std::vector<PlateInfor>& plates)
     else
     {
         LOG_FAIL("Execute Anpr recognizer failed, please check your input");
-        return STATUS_FAILED; 
+        return STATUS::INVALID_ARGS;
     }
-    return STATUS_SUCCESS;
+    return STATUS::SUCCESS;
 }
 
 bool AnprRecognizer::isValidPlate(cv::Mat& img)
@@ -504,3 +475,6 @@ bool AnprRecognizer::isValidPlate(cv::Mat& img)
         return true;
     return false;
 }
+
+    } // aiengine
+} // airuntime

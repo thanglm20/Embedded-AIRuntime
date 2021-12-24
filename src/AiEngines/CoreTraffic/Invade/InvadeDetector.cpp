@@ -144,5 +144,6 @@ void InvadeDetector::checkTraces(Trace traces, int& UP , int& DOWN , int& LEFT ,
         if ((pt2.m_prediction.x > pt1.m_prediction.x)) {
             LEFT = 1;
         }
+
     }
 }

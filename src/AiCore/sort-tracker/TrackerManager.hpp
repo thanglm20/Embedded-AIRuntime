@@ -7,10 +7,9 @@
 #define TrackerManager_hpp
 #include "Hungarian.h"
 #include "KalmanTracker.h"
-#include "ObjectDetector.hpp"
 #include "opencv2/video/tracking.hpp"
 #include "opencv2/highgui/highgui.hpp"
-
+#include "../AITypeData.hpp"
 typedef cv::Point_<float> Point_t;
 
 struct TrajectoryPoint

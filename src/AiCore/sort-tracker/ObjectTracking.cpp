@@ -137,8 +137,13 @@ int ObjectTracking::checkCrossline(const TrackingTrace& track, float xMax, float
     constexpr size_t minTrack = 5;  
     int direction  = 0;
     if (track.m_trace.size() >= minTrack) {
-            direction = line.IsIntersect(Pti2f(track.m_trace[track.m_trace.size() - minTrack]), Pti2f(track.m_trace[track.m_trace.size() - 1]));       
+        if (m_lastIntersections.find(track.m_ID) == m_lastIntersections.end()) {
+            direction = line.IsIntersect(Pti2f(track.m_trace[track.m_trace.size() - minTrack]), Pti2f(track.m_trace[track.m_trace.size() - 1]));
+            if(direction > 0)
+                m_lastIntersections.emplace(track.m_ID);
+        }
     }
+    if(m_lastIntersections.size() > 30) m_lastIntersections.clear();
     return direction;
 }
 

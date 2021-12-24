@@ -15,6 +15,5 @@ cv::Mat resize2SquareImage( const cv::Mat& img, int dest_width);
 cv::Mat skewImageLine (cv::Mat &img);
 cv::Mat equalizeHistogramRGB(const Mat& inputImage);
 cv::Mat equalizeHistgramGray(cv::Mat &img);
-
 #endif
 

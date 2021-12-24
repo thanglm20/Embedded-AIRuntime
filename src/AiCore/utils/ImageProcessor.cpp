@@ -83,7 +83,7 @@ int save_image_yuv(const char *filename, const unsigned char *YUV, size_t y_stri
 		perror("Error opening yuv image for write");
 		return 1;
 	}
-	fwrite(YUV, 1, y_stride*uv_stride*3/2, fp);	
+	fwrite(YUV, 1, y_stride * uv_stride * 3/2, fp);	
 	fclose(fp);
 	return 0;
 }
