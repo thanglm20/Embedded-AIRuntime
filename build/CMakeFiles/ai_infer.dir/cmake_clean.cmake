@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.o"
   "CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o.d"
   "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o"
   "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o.d"
   "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o"

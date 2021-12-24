@@ -4,33 +4,7 @@
     Created: Dec 21th, 2021
 */
 #include "NcnnExecutor.hpp"
-
-static int num_line = 0;
-static std::string read_file(const char* path, bool count_line)
-{
-    std::string result = "";
-    std::ifstream f(path);
-    //check file exist | true = exist
-    if (!f.good()) return result;
-    else
-    {
-        std::string temp;
-        while (std::getline(f, result))
-        {
-            temp.append(result);
-            // std::cout << result;
-            if (count_line == true)
-            {
-                num_line++;
-            }
-        }
-        result = temp;
-        // Close the file
-        f.close();
-    }
-    num_line = 0;
-    return result;
-}
+#include "../utils/LoadLabel.hpp"
 
 NcnnExecutor::NcnnExecutor(airuntime::DeviceType device, 
                             airuntime::AlgTypeAI algType,
@@ -53,6 +27,26 @@ NcnnExecutor::~NcnnExecutor()
 }
 
 STATUS NcnnExecutor::init(){
+    if(getModelWeight().empty() || getPathLabel().empty() || getModelParam().empty())
+    {
+        cout << "Args are invalid, please check your input again\n";
+        return STATUS::INVALID_ARGS;
+    }
+    if(getAlgType() == airuntime::AlgTypeAI::DETECT)
+    {
+        this->m_detector = new NcnnDetector();
+        char pathModelWeight[100];
+        sprintf(pathModelWeight, "%s", getModelWeight().c_str());
+        char pathModelParam[100];
+        sprintf(pathModelParam, "%s", getModelParam().c_str());
+        int net = this->m_detector->initNcnnNetwork(pathModelWeight, pathModelParam, getDeviceType());
+        if( net != STATUS::SUCCESS )
+        {
+            LOG_FAIL("Init Mobilenet SSD failed");
+            return STATUS::FAIL;
+        }
+    }
+    this->m_labels = loadObjectNames(getPathLabel());
     cout << "Initiated NCNN Executor successfully\n";
     return STATUS::SUCCESS;
 }
@@ -61,7 +55,10 @@ STATUS NcnnExecutor::run(const Mat& img,
                             vector<ObjectTrace>& objects,
                             float threshold)
 {
-
+    if(getAlgType() == airuntime::AlgTypeAI::DETECT)
+    {
+        this->m_detector->executeNcnnDetector(img, this->m_labels, objects, threshold);
+    }
     return STATUS::SUCCESS;
 }
 

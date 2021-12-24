@@ -27,6 +27,7 @@
 #include "ncnn/benchmark.h"
 #endif
 
+#include "NcnnDetector.hpp"
 #include "../AITypeData.hpp"
 #include "../AIExecutor.hpp"
 
@@ -34,16 +35,8 @@ class NcnnExecutor : public AIExecutor
 {
 private:
     /* data */
-    ncnn::Net* ncnnNet = nullptr;
-    ncnn::UnlockedPoolAllocator* g_blob_pool_allocator_detect = nullptr;
-    ncnn::PoolAllocator* g_workspace_pool_allocator_detect = nullptr;
-    // HieuPV add code
-    // Nen de la null_ptr nó khác với NULL(0)
-    ncnn::VulkanDevice* g_vkdev = nullptr;
-    ncnn::VkAllocator* g_blob_vkallocator = nullptr;
-    ncnn::VkAllocator* g_staging_vkallocator = nullptr;
-    int width_model;
-    int height_model;
+    NcnnDetector* m_detector;
+    vector<string> m_labels;
 public:
     explicit NcnnExecutor(airuntime::DeviceType device, 
                         airuntime::AlgTypeAI algType,

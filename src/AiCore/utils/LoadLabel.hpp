@@ -43,7 +43,7 @@ static int loadLabel(std::string nameFile, std::vector<std::string>& labels)
 	return 0;
 }
 
-std::vector<std::string> loadObjectNames(const std::string &filename) {
+static std::vector<std::string> loadObjectNames(const std::string &filename) {
     std::ifstream file(filename);
     std::vector<std::string> fileLines;
     if (!file.is_open()) {

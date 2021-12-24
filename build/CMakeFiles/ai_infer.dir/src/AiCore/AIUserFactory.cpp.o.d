@@ -359,4 +359,38 @@ CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.o: \
  /usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/snpe/Util.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libSNPE-prebuilt/include/zdl/DlSystem/ITensorFactory.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/snpe/../AITypeData.hpp
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/snpe/../AITypeData.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/ncnn/NcnnExecutor.hpp \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/c++/7/regex /usr/include/c++/7/bitset \
+ /usr/include/c++/7/stack /usr/include/c++/7/bits/stl_stack.h \
+ /usr/include/c++/7/bits/regex_constants.h \
+ /usr/include/c++/7/bits/regex_error.h \
+ /usr/include/c++/7/bits/regex_automaton.h \
+ /usr/include/c++/7/bits/regex_automaton.tcc \
+ /usr/include/c++/7/bits/regex_scanner.h \
+ /usr/include/c++/7/bits/regex_scanner.tcc \
+ /usr/include/c++/7/bits/regex_compiler.h \
+ /usr/include/c++/7/bits/regex_compiler.tcc \
+ /usr/include/c++/7/bits/regex.h /usr/include/c++/7/bits/regex.tcc \
+ /usr/include/c++/7/bits/regex_executor.h \
+ /usr/include/c++/7/bits/regex_executor.tcc \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/net.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/blob.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/mat.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/allocator.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/platform.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/ncnn_export.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/option.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/layer.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/modelbin.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/paramdict.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include/ncnn/benchmark.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/ncnn/NcnnDetector.hpp \
+ /usr/local/include/opencv4/opencv2/videoio/videoio.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/ncnn/../AITypeData.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/ncnn/../AIExecutor.hpp

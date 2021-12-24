@@ -83,10 +83,24 @@ CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/AIUserFactory.cpp -o CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.s
 
+CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o: ../src/AiCore/ncnn/NcnnDetector.cpp
+CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/ncnn/NcnnDetector.cpp
+
+CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/ncnn/NcnnDetector.cpp > CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.i
+
+CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/ncnn/NcnnDetector.cpp -o CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.s
+
 CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o: ../src/AiCore/ncnn/NcnnExecutor.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/ncnn/NcnnExecutor.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o: ../src/AiCore/snpe/SnpeCommLib.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/snpe/SnpeCommLib.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o: ../src/AiCore/snpe/SnpeExecutor.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/snpe/SnpeExecutor.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.o: ../src/AiCore/snpe/SnpeMobilenetSSD.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/snpe/SnpeMobilenetSSD.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeMobilenetSSD.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.o: ../src/AiCore/snpe/Util.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/snpe/Util.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/snpe/Util.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.o: ../src/AiCore/sort-tracker/Hungarian.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/sort-tracker/Hungarian.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/Hungarian.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.o: ../src/AiCore/sort-tracker/KalmanTracker.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/sort-tracker/KalmanTracker.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/KalmanTracker.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o: ../src/AiCore/sort-tracker/ObjectTracker.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/sort-tracker/ObjectTracker.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o: ../src/AiCore/sort-tracker/ObjectTracking.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/sort-tracker/ObjectTracking.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.s: cmake_forc
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o: ../src/AiCore/sort-tracker/RoadLine.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/sort-tracker/RoadLine.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o: ../src/AiCore/sort-tracker/TrackerManager.cpp
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/sort-tracker/TrackerManager.cpp
 
 CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.s: cmake_forc
 CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o: ../src/examples/DecoderThread.cpp
 CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/DecoderThread.cpp
 
 CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o: ../src/examples/FrameManager.cpp
 CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/FrameManager.cpp
 
 CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o: ../src/examples/OpencvDecoder.cpp
 CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/OpencvDecoder.cpp
 
 CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o: ../src/examples/TrafficDetector.cpp
 CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/TrafficDetector.cpp
 
 CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: ../src/examples/main.cpp
 CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/main.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/main.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/main.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/main.cpp
 
 CMakeFiles/ai_infer.dir/src/examples/main.cpp.i: cmake_force
@@ -310,6 +324,7 @@ CMakeFiles/ai_infer.dir/src/examples/main.cpp.s: cmake_force
 # Object files for target ai_infer
 ai_infer_OBJECTS = \
 "CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o" \
@@ -331,6 +346,7 @@ ai_infer_OBJECTS = \
 ai_infer_EXTERNAL_OBJECTS =
 
 ai_infer: CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o
@@ -402,7 +418,7 @@ ai_infer: /usr/local/lib/libopencv_world.so.4.5.0
 ai_infer: /usr/local/lib/libopencv_world.so.4.5.0
 ai_infer: /usr/local/lib/libopencv_world.so.4.5.0
 ai_infer: CMakeFiles/ai_infer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable ai_infer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable ai_infer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ai_infer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

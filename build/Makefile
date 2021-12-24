@@ -153,6 +153,30 @@ src/AiCore/AIUserFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.s
 .PHONY : src/AiCore/AIUserFactory.cpp.s
 
+src/AiCore/ncnn/NcnnDetector.o: src/AiCore/ncnn/NcnnDetector.cpp.o
+.PHONY : src/AiCore/ncnn/NcnnDetector.o
+
+# target to build an object file
+src/AiCore/ncnn/NcnnDetector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o
+.PHONY : src/AiCore/ncnn/NcnnDetector.cpp.o
+
+src/AiCore/ncnn/NcnnDetector.i: src/AiCore/ncnn/NcnnDetector.cpp.i
+.PHONY : src/AiCore/ncnn/NcnnDetector.i
+
+# target to preprocess a source file
+src/AiCore/ncnn/NcnnDetector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.i
+.PHONY : src/AiCore/ncnn/NcnnDetector.cpp.i
+
+src/AiCore/ncnn/NcnnDetector.s: src/AiCore/ncnn/NcnnDetector.cpp.s
+.PHONY : src/AiCore/ncnn/NcnnDetector.s
+
+# target to generate assembly for a file
+src/AiCore/ncnn/NcnnDetector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.s
+.PHONY : src/AiCore/ncnn/NcnnDetector.cpp.s
+
 src/AiCore/ncnn/NcnnExecutor.o: src/AiCore/ncnn/NcnnExecutor.cpp.o
 .PHONY : src/AiCore/ncnn/NcnnExecutor.o
 
@@ -549,6 +573,9 @@ help:
 	@echo "... src/AiCore/AIUserFactory.o"
 	@echo "... src/AiCore/AIUserFactory.i"
 	@echo "... src/AiCore/AIUserFactory.s"
+	@echo "... src/AiCore/ncnn/NcnnDetector.o"
+	@echo "... src/AiCore/ncnn/NcnnDetector.i"
+	@echo "... src/AiCore/ncnn/NcnnDetector.s"
 	@echo "... src/AiCore/ncnn/NcnnExecutor.o"
 	@echo "... src/AiCore/ncnn/NcnnExecutor.i"
 	@echo "... src/AiCore/ncnn/NcnnExecutor.s"

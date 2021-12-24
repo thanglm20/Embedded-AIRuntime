@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/AIUserFactory.cpp" "CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/AiCore/AIUserFactory.cpp.o.d"
+  "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/ncnn/NcnnDetector.cpp" "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnDetector.cpp.o.d"
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/ncnn/NcnnExecutor.cpp" "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/AiCore/ncnn/NcnnExecutor.cpp.o.d"
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/snpe/SnpeCommLib.cpp" "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeCommLib.cpp.o.d"
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/snpe/SnpeExecutor.cpp" "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/AiCore/snpe/SnpeExecutor.cpp.o.d"

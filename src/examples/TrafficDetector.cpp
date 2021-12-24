@@ -33,11 +33,17 @@ void TrafficDetector::process()
 {
     std::cout << "Creating AI processor\n";
     bool flInit = false;
+    // this->m_executor = new airuntime::aicore::AIUserFactory(airuntime::ExecutorType::NCNN,
+    //                                                         airuntime::DeviceType::CPU,
+    //                                                         airuntime::AlgTypeAI::DETECT,
+    //                                                         "../models/traffic.txt",
+    //                                                         "../models/traffic.dlc");
     this->m_executor = new airuntime::aicore::AIUserFactory(airuntime::ExecutorType::NCNN,
                                                             airuntime::DeviceType::CPU,
                                                             airuntime::AlgTypeAI::DETECT,
                                                             "../models/traffic.txt",
-                                                            "../models/traffic.dlc");
+                                                            "../models/traffic.bin",
+                                                            "../models/traffic.param");
     while(1)
     {
         
@@ -55,7 +61,12 @@ void TrafficDetector::process()
             auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
             cout << "Performance: AI = " << 1000.0 / duration.count() <<  "FPS, Decoder = " 
                 << this->m_frameManager->getFps() << "FPS" << endl;
-             cout << "objects size: " << objects.size() << endl;
+            for(const auto p : objects)
+            {
+                rectangle(frame, p.rect, Scalar(255, 255, 255), 2, 8);
+            }
+            imshow("traffic", frame);
+            // waitKey();
         }
         pthread_mutex_unlock(&this->m_mutex); 
     }

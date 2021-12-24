@@ -62,6 +62,7 @@ src/AiCore/snpe/SnpeExecutor.cpp
 src/AiCore/snpe/SnpeCommLib.cpp
 src/AiCore/snpe/Util.cpp
 src/AiCore/snpe/SnpeMobilenetSSD.cpp
+src/AiCore/ncnn/NcnnDetector.cpp
 src/AiCore/ncnn/NcnnExecutor.cpp
 src/AiCore/sort-tracker/Hungarian.cpp
 src/AiCore/sort-tracker/KalmanTracker.cpp

@@ -30,28 +30,32 @@
 #include "ncnn/benchmark.h"
 #endif
 
-#include "AiTypeData.hpp"
+#include "../AITypeData.hpp"
 #include <unistd.h>
+
 
 class NcnnDetector
 {
     private:
         ncnn::Net* ncnnNet = nullptr;
+
+        #ifdef ANDROID
         ncnn::UnlockedPoolAllocator* g_blob_pool_allocator_detect = nullptr;
         ncnn::PoolAllocator* g_workspace_pool_allocator_detect = nullptr;
-
+        // HieuPV add code
         // Nen de la null_ptr nó khác với NULL(0)
         ncnn::VulkanDevice* g_vkdev = nullptr;
         ncnn::VkAllocator* g_blob_vkallocator = nullptr;
         ncnn::VkAllocator* g_staging_vkallocator = nullptr;
+        #endif
         int width_model;
         int height_model;
     public:
         NcnnDetector();
         ~NcnnDetector();
-        int initNcnnNetwork(const char* model_bin, const char* model_param);
-        int initNcnnNetwork(const char* model_bin, const char* model_param, std::string target_device );
-        int executeNcnnDetector(const cv::Mat& img, std::vector<std::string>& labels, std::vector<ObjectTrace>& objects, float thres_detec) ;
+        int initNcnnNetwork (const char* model_bin, const char* model_param);
+        int initNcnnNetwork (const char* model_bin, const char* model_param, airuntime::DeviceType device);
+        int executeNcnnDetector (const cv::Mat& img, std::vector<std::string>& labels, std::vector<ObjectTrace>& objects, float thres_detec) ;
 };
 
 #endif
