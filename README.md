@@ -26,4 +26,5 @@ make
 1. ncnn: https://github.com/Tencent/ncnn
 2. snpe: 
 3. paddle: https://paddle-lite.readthedocs.io/zh/develop/quick_start/release_lib.html
+4. [Paddle inference library official website](https://www.paddlepaddle.org.cn/documentation/docs/zh/2.0/guides/05_inference_deployment/inference/build_and_install_lib_cn.html). You can view and select the appropriate version of the inference library on the official website.
 

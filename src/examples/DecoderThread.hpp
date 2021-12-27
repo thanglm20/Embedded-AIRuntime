@@ -12,7 +12,7 @@
 #include <signal.h>
 
 #define EXPECTED_FPS 30
-
+#define LINK_VIDEO "/media/thanglmb/Bkav/AICAM/Testing/videos/road.mp4"
 class DecoderThread
 {
 private:

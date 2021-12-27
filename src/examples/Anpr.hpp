@@ -5,12 +5,14 @@
 */
 #ifndef Anpr_hpp
 #define Anpr_hpp
+
 #include "../AiEngines/Anpr/AnprRecognizer.hpp"
 #include "../AiCore/AIUserFactory.hpp"
 #include "FrameManager.hpp"
+#include "AIProcessor.hpp"
 #include <pthread.h>
 #include <signal.h>
-class Anpr
+class Anpr : public AIProcessor
 {
 private:
     /* data */

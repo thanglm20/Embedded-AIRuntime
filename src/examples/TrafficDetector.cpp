@@ -46,7 +46,6 @@ void TrafficDetector::process()
                                                             "../models/traffic.param");
     while(1)
     {
-        
         pthread_mutex_lock(&this->m_mutex);
         cv::Mat frame0 = this->m_frameManager->getFrame();
         cv::Mat frame;
@@ -61,12 +60,13 @@ void TrafficDetector::process()
             auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
             cout << "Performance: AI = " << 1000.0 / duration.count() <<  "FPS, Decoder = " 
                 << this->m_frameManager->getFps() << "FPS" << endl;
+
             for(const auto p : objects)
             {
                 rectangle(frame, p.rect, Scalar(255, 255, 255), 2, 8);
             }
             imshow("traffic", frame);
-            // waitKey();
+            waitKey(1);
         }
         pthread_mutex_unlock(&this->m_mutex); 
     }

@@ -4,6 +4,8 @@
     Date: June 24, 2021
 */
 #include "AnprRecognizer.hpp"
+#include "PaddleOCR-Linux-x64/PaddleOCRx64.hpp"
+
 namespace airuntime{
     namespace aiengine{
 
@@ -12,197 +14,29 @@ AnprRecognizer::AnprRecognizer(Nations nation)
     this->m_nations = nation;
     this->detector = new AnprDetector(this->m_nations);
     this->tracker = new ObjectTracking();
+    
+
     this->listPlateTracks.clear();
 }
 
 AnprRecognizer::~AnprRecognizer()
 {
-    if(this->ocrVN != nullptr)  delete this->ocrVN;
-
-    if(this->ocrUS != nullptr)  delete this->ocrUS;
-
-    if(this->ocrMalay != nullptr)  delete this->ocrMalay;
-
     if(this->detector != nullptr) delete this->detector;
 
     if(this->tracker != nullptr) delete this->tracker;
 }
 int AnprRecognizer::init()
 {
-    
-    // init ocr
-    if(this->m_nations == Nations::VN)
-    {
-        std::cout << "OCR model: " << DIR_OCR_DET_VN << ", " << DIR_OCR_RECOG_VN << endl;
-        if(initVn(DIR_OCR_DET_VN, DIR_OCR_RECOG_VN) != STATUS::SUCCESS)
-            return STATUS::FAIL;
-        
-    }
-    else if(this->m_nations == Nations::US)   
-    {
-        std::cout << "OCR model: " << DIR_OCR_DET_US << ", " << DIR_OCR_RECOG_US << endl;
-        if(initUS(DIR_OCR_DET_US, DIR_OCR_RECOG_US) != STATUS::SUCCESS)
-            return STATUS::FAIL;
-    }    
-    else if(this->m_nations == Nations::MALAY)   
-    {
-        std::cout << "OCR model: " << DIR_OCR_DET_MALAY << ", " << DIR_OCR_RECOG_MALAY << endl;
-        if(initMalay(DIR_OCR_DET_MALAY, DIR_OCR_RECOG_MALAY) != STATUS::SUCCESS)
-            return STATUS::FAIL;
-    } 
+    #ifdef ANDROID 
+        ;
+    #else
+    this->m_licenseOcr = new PaddleOCRx64(); 
+    this->m_licenseOcr->init();
+    #endif
     return STATUS::SUCCESS;
 }
 
-int AnprRecognizer::initVn(std::string pathDet, std::string pathRecog)
-{
-    this->ocrVN = new OcrConfig;
-    this->ocrVN->configOCR["width_det"]  = 192;
-    this->ocrVN->configOCR["height_det"]  = 64;
-    this->ocrVN->configOCR["width_recog"]  = 100;
-    this->ocrVN->configOCR["height_recog"]  = 32;
-    this->ocrVN->configOCR["det_db_thresh"]  = 0.3;
-    this->ocrVN->configOCR["det_db_box_thresh"]  = 0.5;
-    this->ocrVN->configOCR["det_db_unclip_ratio"]  = 1.6;
-    this->ocrVN->configOCR["det_db_use_dilate"]  = 0;
-    this->ocrVN->configOCR["det_use_polygon_score"]  = 1;
-    this->ocrVN->configOCR["use_direction_classify"]  = 0;
 
-    this->ocrVN->detector = loadModel(pathDet);
-    this->ocrVN->recog = loadModel(pathRecog);
-
-    this->ocrVN->dict = ReadDict(PATH_DICTIONARY);
-    this->ocrVN->dict.insert(this->ocrVN->dict.begin(), "#"); // blank char for ctc
-    this->ocrVN->dict.push_back(" ");
-    printf("[INFO] - Init OCR Vietnam successfully\n");
-    return STATUS::SUCCESS;
-}
-
-int AnprRecognizer::initUS(std::string pathDet, std::string pathRecog)
-{
-    this->ocrUS = new OcrConfig;
-
-    this->ocrUS->configOCR["width_det"]  =128;
-    this->ocrUS->configOCR["height_det"]  = 96;
-    this->ocrUS->configOCR["width_recog"]  = 100;
-    this->ocrUS->configOCR["height_recog"]  = 32;
-    this->ocrUS->configOCR["det_db_thresh"]  = 0.3;
-    this->ocrUS->configOCR["det_db_box_thresh"]  = 0.5;
-    this->ocrUS->configOCR["det_db_unclip_ratio"]  = 1.6;
-    this->ocrUS->configOCR["use_direction_classify"]  = 0;
-    
-    this->ocrUS->detector = loadModel(pathDet);
-    this->ocrUS->recog = loadModel(pathRecog);
-
-    this->ocrUS->dict = ReadDict(PATH_DICTIONARY);
-    this->ocrUS->dict.insert(this->ocrUS->dict.begin(), "#"); // blank char for ctc
-    this->ocrUS->dict.push_back(" ");
-    printf("[INFO] - Init model text recognition in US successfully\n");
-    return STATUS::SUCCESS;
-}
-
-int AnprRecognizer::initMalay(std::string pathDet, std::string pathRecog)
-{
-    this->ocrMalay = new OcrConfig;
-
-    this->ocrMalay->configOCR["width_det"]  = 128;
-    this->ocrMalay->configOCR["height_det"]  = 96;
-    this->ocrMalay->configOCR["width_recog"]  = 100;
-    this->ocrMalay->configOCR["height_recog"]  = 32;
-    this->ocrMalay->configOCR["det_db_thresh"]  = 0.3;
-    this->ocrMalay->configOCR["det_db_box_thresh"]  = 0.5;
-    this->ocrMalay->configOCR["det_db_unclip_ratio"]  = 1.6;
-    this->ocrMalay->configOCR["use_direction_classify"]  = 0;
-    
-    this->ocrMalay->detector = loadModel(pathDet);
-    this->ocrMalay->recog = loadModel(pathRecog);
-    this->ocrMalay->dict = ReadDict(PATH_DICTIONARY);
-    this->ocrMalay->dict.insert(this->ocrMalay->dict.begin(), "#"); // blank char for ctc
-    this->ocrMalay->dict.push_back(" ");
-    printf("[INFO] - Init model text recognition in Malaysia successfully\n");
-    return STATUS::SUCCESS;
-}
-
-std::string AnprRecognizer::readText( cv::Mat& img, Nations nation, float& confidence)
-{
-    std::string textOut = "";
-    if(!img.empty())
-    {
-        std::vector<std::string> rec_text;
-        std::vector<float> rec_text_score;
-        if(nation == Nations::VnSquare)
-        {             
-            this->ocrVN->configOCR["width_det"]  = 128;
-            this->ocrVN->configOCR["height_det"]  = 96;
-            std::vector<std::vector<std::vector<int>>> boxes = RunDetModel(this->ocrVN->detector, img, this->ocrVN->configOCR); 
-            RunRecModel(boxes, img, this->ocrVN->recog, rec_text, rec_text_score, this->ocrVN->dict, this->ocrVN->configOCR);
-        }
-        else if(nation == Nations::VnRect)
-        {      
-            this->ocrVN->configOCR["width_det"]  = 128;
-            this->ocrVN->configOCR["height_det"]  = 64;
-            std::vector<std::vector<std::vector<int>>> boxes = RunDetModel(this->ocrVN->detector, img, this->ocrVN->configOCR);
-            RunRecModel(boxes, img, this->ocrVN->recog, rec_text, rec_text_score, this->ocrVN->dict, this->ocrVN->configOCR);
-        }
-        else if(nation == Nations::US)
-        {
-            std::vector<std::vector<std::vector<int>>> boxes = RunDetModel(this->ocrUS->detector, img, this->ocrUS->configOCR);
-            RunRecModel(boxes, img, this->ocrUS->recog, rec_text, rec_text_score, this->ocrUS->dict, this->ocrUS->configOCR);
-            // Visualization(img, boxes);
-        }
-        else if(nation == Nations::MALAY)
-        {
-            std::vector<std::vector<std::vector<int>>> boxes = RunDetModel(this->ocrMalay->detector, img, this->ocrMalay->configOCR);
-            RunRecModel(boxes, img, this->ocrMalay->recog, rec_text, rec_text_score, this->ocrMalay->dict, this->ocrMalay->configOCR);
-        }
-
-        float score = 0;
-        if(rec_text.size() > 0)
-        { 
-            for (int i = 0; i < rec_text.size(); i++)
-            {                       
-                if(!isnan(rec_text_score[i]))
-                {
-                    if(rec_text_score[i] < THRESHOLD_OCR)
-                        return "Unknown";
-                    score += rec_text_score[i];
-                    
-                }
-                    
-                textOut += rec_text[i];                       
-            }          
-            confidence = score / rec_text.size();
-            if(this->m_nations == Nations::VN)
-            {   
-                std::regex validLicense ("[0-9]{3}");
-
-                if(textOut.length() > 9 || textOut.length() < 5)
-                    return "Unknown";
-                
-                if(!std::regex_match(textOut.end() - 3, textOut.end(), validLicense))
-                    return "Unknown";                
-            }
-            
-        }
-        else 
-        {
-            textOut = "Unknown";
-            confidence = 0;
-        }
-    }
-    
-    return textOut;
-}
-int CalcBlurryImage(cv::Mat matInput)
-{
-	cv::Mat gray ;
-    cv::cvtColor(matInput, gray, cv::COLOR_BGR2GRAY);
-	cv::Mat laplacianImage;
-	cv::Laplacian(gray, laplacianImage, CV_64F);
-	cv::Scalar mean, stddev; // 0:1st channel, 1:2nd channel and 2:3rd channel
-	cv::meanStdDev(laplacianImage, mean, stddev, cv::Mat());
-	double variance = stddev.val[0] * stddev.val[0];
-	return variance;
-}
 int AnprRecognizer::recognize( cv::Mat& img, std::vector<PlateInfor>& plates)
 {
     if(!img.empty())
@@ -238,25 +72,7 @@ int AnprRecognizer::recognize( cv::Mat& img, std::vector<PlateInfor>& plates)
                 PlateInfor plate;            
                 if(isValidPlate(imgPlate))
                 {
-                    if(objPlates[i].label == "VnRect" || objPlates[i].label == "VN_rectangle" )     
-                    {
-                        plate.license = readText(imgPlate, Nations::VnRect, confidence);
-                    }          
-                    else if(objPlates[i].label == "VnSquare" || objPlates[i].label == "VN_square")
-                    {
-                        plate.license = readText(imgPlate, Nations::VnSquare, confidence);
-                    }           
-                    if(objPlates[i].label == "US")
-                    {
-                        plate.license = readText(imgPlate, Nations::US, confidence) ; 
-                    }
-                    else if(objPlates[i].label == "Malay") // malay
-                    {
-                        plate.license = readText(imgPlate, Nations::MALAY, confidence) ; 
-                    }
-                    if(!isnan(confidence) && !isnan(objPlates[i].score))
-                        plate.score = (confidence + objPlates[i].score) / 2.0;
-                    else plate.score = 0;
+                    plate.license = this->m_licenseOcr->recognize(imgPlate);
                 }
                 else
                 {
@@ -282,7 +98,7 @@ int AnprRecognizer::recognize( cv::Mat& img, std::vector<PlateInfor>& plates)
     }
     return STATUS::SUCCESS;
 }
-
+/*
 int AnprRecognizer::trackAnpr(Mat &img, std::vector<PlateInfor>& plates)
 {
     plates.clear();
@@ -468,7 +284,7 @@ int AnprRecognizer::trackAnpr(Mat &img, std::vector<PlateInfor>& plates)
     }
     return STATUS::SUCCESS;
 }
-
+*/
 bool AnprRecognizer::isValidPlate(cv::Mat& img)
 {
     if(img.rows * img.cols >= 100) 

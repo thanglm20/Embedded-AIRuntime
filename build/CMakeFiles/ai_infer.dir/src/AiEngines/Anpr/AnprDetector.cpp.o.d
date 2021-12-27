@@ -320,4 +320,5 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o: \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/AIUserFactory.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/AIExecutor.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/AITypeData.hpp
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/AITypeData.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/AnprConfig.hpp

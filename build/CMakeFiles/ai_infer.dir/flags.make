@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libSNPE-prebuilt/include/zdl -I/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include -I/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libpaddlelite/include -I/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libSNPE-prebuilt/include/zdl -I/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libncnn-linux_x86_64/include -I/home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/include -I/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src -isystem /usr/local/include/opencv4
 
 CXX_FLAGS = -std=gnu++14
 

@@ -187,26 +187,14 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: \
  /usr/include/c++/7/bits/regex.h /usr/include/c++/7/bits/regex.tcc \
  /usr/include/c++/7/bits/regex_executor.h \
  /usr/include/c++/7/bits/regex_executor.tcc \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/ocr/ocr_db_crnn.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libpaddlelite/include/paddle_api.h \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/libpaddlelite/include/paddle_place.h \
- /usr/include/c++/7/set /usr/include/c++/7/bits/stl_set.h \
- /usr/include/c++/7/bits/stl_multiset.h /usr/include/c++/7/chrono \
- /usr/include/c++/7/ratio /usr/include/c++/7/bits/parse_numbers.h \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/ocr/crnn_process.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/AnprDetector.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/AITypeData.hpp \
  /usr/include/c++/7/fstream \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
  /usr/include/c++/7/bits/fstream.tcc /usr/include/c++/7/iostream \
- /usr/include/c++/7/math.h /usr/include/c++/7/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/local/include/opencv4/opencv2/opencv.hpp \
+ /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/local/include/opencv4/opencv2/core.hpp \
  /usr/local/include/opencv4/opencv2/core/cvdef.h \
  /usr/local/include/opencv4/opencv2/core/hal/interface.h \
@@ -219,7 +207,6 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: \
  /usr/include/c++/7/stdlib.h \
  /usr/local/include/opencv4/opencv2/core/version.hpp \
  /usr/local/include/opencv4/opencv2/core/base.hpp \
- /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/c++/7/climits \
  /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h \
@@ -230,6 +217,15 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /usr/local/include/opencv4/opencv2/core/cvstd.hpp \
+ /usr/include/c++/7/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
  /usr/local/include/opencv4/opencv2/core/neon_utils.hpp \
  /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp \
@@ -250,20 +246,12 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: \
  /usr/include/c++/7/complex \
  /usr/local/include/opencv4/opencv2/core/utility.hpp \
  /usr/include/c++/7/functional /usr/include/c++/7/mutex \
+ /usr/include/c++/7/chrono /usr/include/c++/7/ratio \
+ /usr/include/c++/7/bits/parse_numbers.h \
  /usr/include/c++/7/bits/std_mutex.h \
  /usr/local/include/opencv4/opencv2/core/optim.hpp \
  /usr/local/include/opencv4/opencv2/core/ovx.hpp \
  /usr/local/include/opencv4/opencv2/core/cvdef.h \
- /usr/local/include/opencv4/opencv2/imgcodecs.hpp \
- /usr/local/include/opencv4/opencv2/imgproc.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/ocr/db_post_process.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/ocr/clipper.hpp \
- /usr/include/c++/7/list /usr/include/c++/7/bits/stl_list.h \
- /usr/include/c++/7/bits/list.tcc /usr/include/c++/7/queue \
- /usr/include/c++/7/bits/stl_queue.h \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/AnprDetector.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/AITypeData.hpp \
- /usr/local/include/opencv4/opencv2/opencv.hpp \
  /usr/local/include/opencv4/opencv2/calib3d.hpp \
  /usr/local/include/opencv4/opencv2/features2d.hpp \
  /usr/local/include/opencv4/opencv2/flann/miniflann.hpp \
@@ -289,6 +277,8 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: \
  /usr/local/include/opencv4/opencv2/flann/saving.h \
  /usr/local/include/opencv4/opencv2/flann/nn_index.h \
  /usr/local/include/opencv4/opencv2/flann/result_set.h \
+ /usr/include/c++/7/set /usr/include/c++/7/bits/stl_set.h \
+ /usr/include/c++/7/bits/stl_multiset.h \
  /usr/local/include/opencv4/opencv2/flann/all_indices.h \
  /usr/local/include/opencv4/opencv2/flann/kdtree_index.h \
  /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h \
@@ -307,14 +297,16 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: \
  /usr/include/c++/7/iomanip /usr/include/c++/7/bits/quoted_string.h \
  /usr/include/c++/7/unordered_map /usr/include/c++/7/bits/hashtable.h \
  /usr/include/c++/7/bits/hashtable_policy.h \
- /usr/include/c++/7/bits/unordered_map.h \
+ /usr/include/c++/7/bits/unordered_map.h /usr/include/c++/7/math.h \
  /usr/local/include/opencv4/opencv2/flann/autotuned_index.h \
  /usr/local/include/opencv4/opencv2/flann/ground_truth.h \
  /usr/local/include/opencv4/opencv2/flann/index_testing.h \
  /usr/local/include/opencv4/opencv2/flann/timer.h \
  /usr/local/include/opencv4/opencv2/flann/sampling.h \
  /usr/local/include/opencv4/opencv2/highgui.hpp \
+ /usr/local/include/opencv4/opencv2/imgcodecs.hpp \
  /usr/local/include/opencv4/opencv2/videoio.hpp \
+ /usr/local/include/opencv4/opencv2/imgproc.hpp \
  /usr/local/include/opencv4/opencv2/ml.hpp \
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp \
  /usr/local/include/opencv4/opencv2/objdetect.hpp \
@@ -332,7 +324,10 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: \
  /usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
  /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp \
  /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp \
+ /usr/include/c++/7/list /usr/include/c++/7/bits/stl_list.h \
+ /usr/include/c++/7/bits/list.tcc \
  /usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+ /usr/include/c++/7/queue /usr/include/c++/7/bits/stl_queue.h \
  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp \
  /usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
  /usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
@@ -344,6 +339,8 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/AIUserFactory.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/AIExecutor.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/AITypeData.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/AnprConfig.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/LicenseOcr.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/sort-tracker/ObjectTracking.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/sort-tracker/ObjectTracker.hpp \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -356,4 +353,26 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: \
  /usr/local/include/opencv4/opencv2/highgui/highgui.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/sort-tracker/TrackerManager.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/sort-tracker/../AITypeData.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/sort-tracker/RoadLine.hpp
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/../../AiCore/sort-tracker/RoadLine.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/omp.h /usr/include/c++/7/numeric \
+ /usr/include/c++/7/bits/stl_numeric.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.h \
+ /home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/include/paddle_api.h \
+ /usr/include/c++/7/cassert \
+ /home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/include/crypto/cipher.h \
+ /home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/include/paddle_infer_declare.h \
+ /home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/include/paddle_inference_api.h \
+ /home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/include/paddle_analysis_config.h \
+ /usr/include/c++/7/unordered_set /usr/include/c++/7/bits/unordered_set.h \
+ /home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/include/paddle_pass_builder.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/../LicenseOcr.hpp

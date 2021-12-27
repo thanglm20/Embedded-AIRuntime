@@ -1,0 +1,46 @@
+
+# Module: CMakelists.txt
+# Author: LE MANH THANG
+# Created: 10/01/2021
+# Description: 
+# cmakelist for paddle
+
+cmake_minimum_required(VERSION 3.10.2)
+
+enable_language(C)
+enable_language(CXX)
+
+project (ai_infer)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+#opencv
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS})
+
+#add lib paddle-lite
+set( PADDLE_LIB libpaddle_inference.so)
+link_directories(/home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/lib)
+include_directories(/home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/include)
+
+
+include_directories(${CMAKE_SOURCE_DIR}/src)
+
+
+file( GLOB SOURCES  
+src/AiEngines/Anpr/PaddleOCR-Linux-x64/*.cpp
+)
+                    
+add_executable(${PROJECT_NAME} ${SOURCES})
+
+target_link_libraries(${PROJECT_NAME}
+
+${OpenCV_LIBS}
+${SNPE_LIB}
+${NCNN_LIB}
+${PADDLE_LITE_LIB}
+${libHtpPrepare}
+${libomp}
+ -Wall -lm -lpthread -lstdc++ -std=c++14 -lgomp -Wcpp -fPIC -march=x86-64
+) 

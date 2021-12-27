@@ -348,4 +348,33 @@ CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: \
  /usr/include/c++/7/fstream \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
- /usr/include/c++/7/bits/fstream.tcc
+ /usr/include/c++/7/bits/fstream.tcc \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Anpr.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/AnprRecognizer.hpp \
+ /usr/include/c++/7/regex /usr/include/c++/7/bitset \
+ /usr/include/c++/7/iterator /usr/include/c++/7/bits/stream_iterator.h \
+ /usr/include/c++/7/stack /usr/include/c++/7/bits/stl_stack.h \
+ /usr/include/c++/7/bits/regex_constants.h \
+ /usr/include/c++/7/bits/regex_error.h \
+ /usr/include/c++/7/bits/regex_automaton.h \
+ /usr/include/c++/7/bits/regex_automaton.tcc \
+ /usr/include/c++/7/bits/regex_scanner.h \
+ /usr/include/c++/7/bits/regex_scanner.tcc \
+ /usr/include/c++/7/bits/regex_compiler.h \
+ /usr/include/c++/7/bits/regex_compiler.tcc \
+ /usr/include/c++/7/bits/regex.h /usr/include/c++/7/bits/regex.tcc \
+ /usr/include/c++/7/bits/regex_executor.h \
+ /usr/include/c++/7/bits/regex_executor.tcc \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/AnprDetector.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/../../AiCore/AITypeData.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/../../AiCore/AIUserFactory.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/AnprConfig.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/LicenseOcr.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/../../AiCore/sort-tracker/ObjectTracking.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/../../AiCore/sort-tracker/ObjectTracker.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/../../AiCore/sort-tracker/Hungarian.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/../../AiCore/sort-tracker/KalmanTracker.h \
+ /usr/local/include/opencv4/opencv2/highgui/highgui.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/../../AiCore/sort-tracker/TrackerManager.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/../../AiCore/sort-tracker/../AITypeData.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/Anpr/../../AiCore/sort-tracker/RoadLine.hpp

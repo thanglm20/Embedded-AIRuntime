@@ -43,13 +43,9 @@ void Anpr::process()
 {
     std::cout << "Creating AI processor\n";
     bool flInit = false;
-    this->m_anpr = new airuntime::aiengine::AnprRecognizer(Nations::VN);
+    this->m_anpr = new airuntime::aiengine::AnprRecognizer(airuntime::aiengine::Nations::VN);
     
-    // VideoWriter writer;          
-    // int codec = VideoWriter::fourcc('M', 'J', 'P', 'G');    
-    // double fps = 5.0;    
-    // std::string filename = "/data/thanglmb/output/anpr.avi";    
-    // writer.open(filename, codec, fps, cv::Size(1280, 720));  
+
 
     while(1)
     {
@@ -68,8 +64,7 @@ void Anpr::process()
         if(!frame.empty()) 
         {
             auto start = std::chrono::high_resolution_clock::now();    
-            // this->m_anpr->recognize(frame, plates);
-            this->m_anpr->trackAnpr(frame, plates);
+            this->m_anpr->recognize(frame, plates);
             auto end = std::chrono::high_resolution_clock::now();    
             auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
             cout << "Performance: AI = " << 1000.0 / duration.count() <<  "FPS, Decoder = " 
@@ -81,8 +76,8 @@ void Anpr::process()
                 string text = p.track_id + ":" + p.license;
                 putText(frame, text, Point(p.rect.x, p.rect.y), FONT_HERSHEY_DUPLEX, 0.5, Scalar(0, 0, 255));
             }
-            resize(frame, frame, Size(1280, 720));
-            // writer.write(frame);
+            imshow("traffic", frame);
+            waitKey(1);
         }
         pthread_mutex_unlock(&this->m_mutex); 
     }

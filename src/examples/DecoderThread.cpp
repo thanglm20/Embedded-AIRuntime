@@ -53,8 +53,8 @@ void DecoderThread::process()
         this->m_decoder = new OpencvDecoder();
     #endif
 
-    const char* video_file = (char*)"/home/thanglmb/Downloads/abc.mp4";
-    int ret = this->m_decoder->open(video_file);
+   
+    int ret = this->m_decoder->open(LINK_VIDEO);
 
     if(ret == 0)
     while(1)

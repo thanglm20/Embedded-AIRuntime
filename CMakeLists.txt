@@ -42,10 +42,11 @@ set( NCNN_LIB libncnn.a)
 link_directories(${CMAKE_SOURCE_DIR}/libncnn-linux_x86_64/lib)
 include_directories(${CMAKE_SOURCE_DIR}/libncnn-linux_x86_64/include)
 
+
 #add lib paddle-lite
-set( PADDLE_LITE_LIB libpaddle_light_api_shared.so)
-link_directories(${CMAKE_SOURCE_DIR}/libpaddlelite/lib)
-include_directories(${CMAKE_SOURCE_DIR}/libpaddlelite/include)
+set( PADDLE_LIB libpaddle_inference.so)
+link_directories(/home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/lib)
+include_directories(/home/thanglmb/Documents/PaddleOCR/deploy/libs/paddle_inference/paddle/include)
 
 include_directories(${CMAKE_SOURCE_DIR}/src)
 
@@ -56,6 +57,7 @@ src/examples/OpencvDecoder.cpp
 src/examples/DecoderThread.cpp
 src/examples/FrameManager.cpp
 src/examples/TrafficDetector.cpp
+src/examples/Anpr.cpp
 
 src/AiCore/AIUserFactory.cpp
 src/AiCore/snpe/SnpeExecutor.cpp
@@ -71,6 +73,9 @@ src/AiCore/sort-tracker/TrackerManager.cpp
 src/AiCore/sort-tracker/RoadLine.cpp
 src/AiCore/sort-tracker/ObjectTracking.cpp
 
+src/AiEngines/Anpr/PaddleOCR-Linux-x64/*.cpp
+src/AiEngines/Anpr/AnprDetector.cpp
+src/AiEngines/Anpr/AnprRecognizer.cpp
 
 )
                     
@@ -81,7 +86,7 @@ target_link_libraries(${PROJECT_NAME}
 ${OpenCV_LIBS}
 ${SNPE_LIB}
 ${NCNN_LIB}
-${PADDLE_LITE_LIB}
+${PADDLE_LIB}
 ${libHtpPrepare}
 ${libomp}
  -Wall -lm -lpthread -lstdc++ -std=c++14 -lgomp -Wcpp -fPIC -march=x86-64

@@ -7,9 +7,10 @@
 
 
 
-AnprDetector::AnprDetector(Nations nation)
-{ 
-    if(nation == Nations::VN)
+AnprDetector::AnprDetector(airuntime::aiengine::Nations nation)
+{   
+    #ifdef ANDROID
+    if(nation == airuntime::aiengine::Nations::VN)
         this->m_plateDetector = new airuntime::aicore::AIUserFactory(
                                             airuntime::ExecutorType::SNPE, 
                                             airuntime::DeviceType::DSP,
@@ -17,6 +18,17 @@ AnprDetector::AnprDetector(Nations nation)
                                             "/data/thanglmb/models/snpe/AnprDetect.txt",
                                             "/data/thanglmb/models/snpe/AnprDetect.dlc"
                                             );
+    #else
+        if(nation == airuntime::aiengine::Nations::VN)
+        this->m_plateDetector = new airuntime::aicore::AIUserFactory(
+                                            airuntime::ExecutorType::NCNN, 
+                                            airuntime::DeviceType::CPU,
+                                            airuntime::AlgTypeAI::DETECT,
+                                            "../models/anpr/AnprDetect.txt",
+                                            "../models/anpr/AnprDetect.bin",
+                                            "../models/anpr/AnprDetect.param"
+                                            );
+    #endif
 }
 
 AnprDetector::~AnprDetector()
