@@ -36,12 +36,6 @@ private:
     LicenseOcr* m_licenseOcr;
     std::vector<PlateInfor> listPlateTracks;
 
-    std::string readText( cv::Mat& img, Nations nation, float& confidence);
-    int initVn(std::string pathDet, std::string pathRecog);
-    int initVnSquare(std::string pathDet, std::string pathRecog);
-    int initVnRect(std::string pathDet, std::string pathRecog);
-    int initUS(std::string pathDet, std::string pathRecog);
-    int initMalay(std::string pathDet, std::string pathRecog);
     bool isValidPlate(cv::Mat& img);
 
 public:

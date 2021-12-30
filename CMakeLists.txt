@@ -56,7 +56,7 @@ src/examples/main.cpp
 src/examples/OpencvDecoder.cpp
 src/examples/DecoderThread.cpp
 src/examples/FrameManager.cpp
-src/examples/TrafficDetector.cpp
+src/examples/Traffic.cpp
 src/examples/Anpr.cpp
 
 src/AiCore/AIUserFactory.cpp
@@ -77,6 +77,8 @@ src/AiEngines/Anpr/PaddleOCR-Linux-x64/*.cpp
 src/AiEngines/Anpr/AnprDetector.cpp
 src/AiEngines/Anpr/AnprRecognizer.cpp
 
+src/AiEngines/Traffic/VehicleDetector.cpp
+src/AiEngines/Traffic/Oppose.cpp
 )
                     
 add_executable(${PROJECT_NAME} ${SOURCES})

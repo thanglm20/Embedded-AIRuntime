@@ -16,15 +16,10 @@ using namespace std;
 
 class LicenseOcr
 {
-private:
-    int m_width = 0;
-    int m_height = 0;
 public:
     virtual ~LicenseOcr () {;}
     virtual STATUS init () = 0;
     virtual std::string recognize (cv::Mat& imgLicense) = 0;
-    int getWidth() {return m_width;}
-    int getHeight() {return m_height;}
 };
 
 #endif

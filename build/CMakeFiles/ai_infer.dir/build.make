@@ -405,10 +405,38 @@ CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
 
+CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o: ../src/AiEngines/Traffic/Oppose.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/Oppose.cpp
+
+CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/Oppose.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.i
+
+CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/Oppose.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.s
+
+CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o: ../src/AiEngines/Traffic/VehicleDetector.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/VehicleDetector.cpp
+
+CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/VehicleDetector.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.i
+
+CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/VehicleDetector.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.s
+
 CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o: ../src/examples/Anpr.cpp
 CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Anpr.cpp
 
 CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.i: cmake_force
@@ -422,7 +450,7 @@ CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o: ../src/examples/DecoderThread.cpp
 CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/DecoderThread.cpp
 
 CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.i: cmake_force
@@ -436,7 +464,7 @@ CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o: ../src/examples/FrameManager.cpp
 CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/FrameManager.cpp
 
 CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.i: cmake_force
@@ -450,7 +478,7 @@ CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.s: cmake_force
 CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o: ../src/examples/OpencvDecoder.cpp
 CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/OpencvDecoder.cpp
 
 CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.i: cmake_force
@@ -461,24 +489,24 @@ CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/OpencvDecoder.cpp -o CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.s
 
-CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o: ../src/examples/TrafficDetector.cpp
-CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/TrafficDetector.cpp
+CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o: ../src/examples/Traffic.cpp
+CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Traffic.cpp
 
-CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/TrafficDetector.cpp > CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.i
+CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Traffic.cpp > CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.i
 
-CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/TrafficDetector.cpp -o CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.s
+CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Traffic.cpp -o CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.s
 
 CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: ../src/examples/main.cpp
 CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ai_infer.dir/src/examples/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/examples/main.cpp.o -MF CMakeFiles/ai_infer.dir/src/examples/main.cpp.o.d -o CMakeFiles/ai_infer.dir/src/examples/main.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/main.cpp
 
 CMakeFiles/ai_infer.dir/src/examples/main.cpp.i: cmake_force
@@ -515,11 +543,13 @@ ai_infer_OBJECTS = \
 "CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/examples/main.cpp.o"
 
 # External object files for target ai_infer
@@ -549,11 +579,13 @@ ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec
 ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/examples/main.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/build.make
 ai_infer: /usr/local/lib/libopencv_world.so.4.5.0
@@ -610,7 +642,7 @@ ai_infer: /usr/local/lib/libopencv_world.so.4.5.0
 ai_infer: /usr/local/lib/libopencv_world.so.4.5.0
 ai_infer: /usr/local/lib/libopencv_world.so.4.5.0
 ai_infer: CMakeFiles/ai_infer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable ai_infer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable ai_infer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ai_infer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

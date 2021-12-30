@@ -705,6 +705,54 @@ src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
 .PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
 
+src/AiEngines/Traffic/Oppose.o: src/AiEngines/Traffic/Oppose.cpp.o
+.PHONY : src/AiEngines/Traffic/Oppose.o
+
+# target to build an object file
+src/AiEngines/Traffic/Oppose.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o
+.PHONY : src/AiEngines/Traffic/Oppose.cpp.o
+
+src/AiEngines/Traffic/Oppose.i: src/AiEngines/Traffic/Oppose.cpp.i
+.PHONY : src/AiEngines/Traffic/Oppose.i
+
+# target to preprocess a source file
+src/AiEngines/Traffic/Oppose.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.i
+.PHONY : src/AiEngines/Traffic/Oppose.cpp.i
+
+src/AiEngines/Traffic/Oppose.s: src/AiEngines/Traffic/Oppose.cpp.s
+.PHONY : src/AiEngines/Traffic/Oppose.s
+
+# target to generate assembly for a file
+src/AiEngines/Traffic/Oppose.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.s
+.PHONY : src/AiEngines/Traffic/Oppose.cpp.s
+
+src/AiEngines/Traffic/VehicleDetector.o: src/AiEngines/Traffic/VehicleDetector.cpp.o
+.PHONY : src/AiEngines/Traffic/VehicleDetector.o
+
+# target to build an object file
+src/AiEngines/Traffic/VehicleDetector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o
+.PHONY : src/AiEngines/Traffic/VehicleDetector.cpp.o
+
+src/AiEngines/Traffic/VehicleDetector.i: src/AiEngines/Traffic/VehicleDetector.cpp.i
+.PHONY : src/AiEngines/Traffic/VehicleDetector.i
+
+# target to preprocess a source file
+src/AiEngines/Traffic/VehicleDetector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.i
+.PHONY : src/AiEngines/Traffic/VehicleDetector.cpp.i
+
+src/AiEngines/Traffic/VehicleDetector.s: src/AiEngines/Traffic/VehicleDetector.cpp.s
+.PHONY : src/AiEngines/Traffic/VehicleDetector.s
+
+# target to generate assembly for a file
+src/AiEngines/Traffic/VehicleDetector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.s
+.PHONY : src/AiEngines/Traffic/VehicleDetector.cpp.s
+
 src/examples/Anpr.o: src/examples/Anpr.cpp.o
 .PHONY : src/examples/Anpr.o
 
@@ -801,29 +849,29 @@ src/examples/OpencvDecoder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.s
 .PHONY : src/examples/OpencvDecoder.cpp.s
 
-src/examples/TrafficDetector.o: src/examples/TrafficDetector.cpp.o
-.PHONY : src/examples/TrafficDetector.o
+src/examples/Traffic.o: src/examples/Traffic.cpp.o
+.PHONY : src/examples/Traffic.o
 
 # target to build an object file
-src/examples/TrafficDetector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o
-.PHONY : src/examples/TrafficDetector.cpp.o
+src/examples/Traffic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o
+.PHONY : src/examples/Traffic.cpp.o
 
-src/examples/TrafficDetector.i: src/examples/TrafficDetector.cpp.i
-.PHONY : src/examples/TrafficDetector.i
+src/examples/Traffic.i: src/examples/Traffic.cpp.i
+.PHONY : src/examples/Traffic.i
 
 # target to preprocess a source file
-src/examples/TrafficDetector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.i
-.PHONY : src/examples/TrafficDetector.cpp.i
+src/examples/Traffic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.i
+.PHONY : src/examples/Traffic.cpp.i
 
-src/examples/TrafficDetector.s: src/examples/TrafficDetector.cpp.s
-.PHONY : src/examples/TrafficDetector.s
+src/examples/Traffic.s: src/examples/Traffic.cpp.s
+.PHONY : src/examples/Traffic.s
 
 # target to generate assembly for a file
-src/examples/TrafficDetector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.s
-.PHONY : src/examples/TrafficDetector.cpp.s
+src/examples/Traffic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.s
+.PHONY : src/examples/Traffic.cpp.s
 
 src/examples/main.o: src/examples/main.cpp.o
 .PHONY : src/examples/main.o
@@ -930,6 +978,12 @@ help:
 	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.o"
 	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.i"
 	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.s"
+	@echo "... src/AiEngines/Traffic/Oppose.o"
+	@echo "... src/AiEngines/Traffic/Oppose.i"
+	@echo "... src/AiEngines/Traffic/Oppose.s"
+	@echo "... src/AiEngines/Traffic/VehicleDetector.o"
+	@echo "... src/AiEngines/Traffic/VehicleDetector.i"
+	@echo "... src/AiEngines/Traffic/VehicleDetector.s"
 	@echo "... src/examples/Anpr.o"
 	@echo "... src/examples/Anpr.i"
 	@echo "... src/examples/Anpr.s"
@@ -942,9 +996,9 @@ help:
 	@echo "... src/examples/OpencvDecoder.o"
 	@echo "... src/examples/OpencvDecoder.i"
 	@echo "... src/examples/OpencvDecoder.s"
-	@echo "... src/examples/TrafficDetector.o"
-	@echo "... src/examples/TrafficDetector.i"
-	@echo "... src/examples/TrafficDetector.s"
+	@echo "... src/examples/Traffic.o"
+	@echo "... src/examples/Traffic.i"
+	@echo "... src/examples/Traffic.s"
 	@echo "... src/examples/main.o"
 	@echo "... src/examples/main.i"
 	@echo "... src/examples/main.s"

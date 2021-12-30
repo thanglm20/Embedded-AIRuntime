@@ -32,11 +32,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp" "CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o.d"
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp" "CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o.d"
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp" "CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o.d"
+  "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/Oppose.cpp" "CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o.d"
+  "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/VehicleDetector.cpp" "CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o.d"
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Anpr.cpp" "CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o.d"
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/DecoderThread.cpp" "CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o.d"
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/FrameManager.cpp" "CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o.d"
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/OpencvDecoder.cpp" "CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/examples/OpencvDecoder.cpp.o.d"
-  "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/TrafficDetector.cpp" "CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/examples/TrafficDetector.cpp.o.d"
+  "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Traffic.cpp" "CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o.d"
   "/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/main.cpp" "CMakeFiles/ai_infer.dir/src/examples/main.cpp.o" "gcc" "CMakeFiles/ai_infer.dir/src/examples/main.cpp.o.d"
   )
 
