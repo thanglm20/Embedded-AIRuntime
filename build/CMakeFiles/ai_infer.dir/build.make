@@ -251,187 +251,187 @@ CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiCore/sort-tracker/TrackerManager.cpp -o CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o: ../src/AiEngines/Anpr/AnprDetector.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/AnprDetector.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.o: ../src/AiEngines/ITS/Anpr/AnprDetector.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/AnprDetector.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/AnprDetector.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/AnprDetector.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/AnprDetector.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/AnprDetector.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: ../src/AiEngines/Anpr/AnprRecognizer.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/AnprRecognizer.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o: ../src/AiEngines/ITS/Anpr/AnprRecognizer.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/AnprRecognizer.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/AnprRecognizer.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o: ../src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o: ../src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o: ../src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o: ../src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o: ../src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o: ../src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o: ../src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o: ../src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o: ../src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o: ../src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o: ../src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o: ../src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o: ../src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o: ../src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o: ../src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o: ../src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o: ../src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o: ../src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o: ../src/AiEngines/Traffic/Oppose.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/Oppose.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o: ../src/AiEngines/ITS/VehicleDetector.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/VehicleDetector.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/Oppose.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/VehicleDetector.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/Oppose.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/VehicleDetector.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.s
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o: CMakeFiles/ai_infer.dir/flags.make
-CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o: ../src/AiEngines/Traffic/VehicleDetector.cpp
-CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/VehicleDetector.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o: CMakeFiles/ai_infer.dir/flags.make
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o: ../src/AiEngines/ITS/Violation/Oppose.cpp
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o: CMakeFiles/ai_infer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o -MF CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o.d -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o -c /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Violation/Oppose.cpp
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/VehicleDetector.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.i
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Violation/Oppose.cpp > CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.i
 
-CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/Traffic/VehicleDetector.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.s
+CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/AiEngines/ITS/Violation/Oppose.cpp -o CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.s
 
 CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o: CMakeFiles/ai_infer.dir/flags.make
 CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o: ../src/examples/Anpr.cpp
@@ -532,19 +532,19 @@ ai_infer_OBJECTS = \
 "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o" \
-"CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o" \
+"CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o" \
 "CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o" \
@@ -568,19 +568,19 @@ ai_infer: CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracker.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/ObjectTracking.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/RoadLine.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o
-ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o
+ai_infer: CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o
 ai_infer: CMakeFiles/ai_infer.dir/src/examples/FrameManager.cpp.o

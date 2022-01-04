@@ -43,7 +43,7 @@ double HungarianAlgorithm::Solve(vector<vector<double>> &DistMatrix, vector<int>
     Assignment.clear();
     for (unsigned int r = 0; r < nRows; r++)
         Assignment.push_back(assignment[r]);
-
+    
     delete[] distMatrixIn;
     delete[] assignment;
     return cost;

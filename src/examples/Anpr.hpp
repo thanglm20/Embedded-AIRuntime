@@ -6,7 +6,7 @@
 #ifndef Anpr_hpp
 #define Anpr_hpp
 
-#include "../AiEngines/Anpr/AnprRecognizer.hpp"
+#include "../AiEngines/ITS/Anpr/AnprRecognizer.hpp"
 #include "../AiCore/AIUserFactory.hpp"
 #include "FrameManager.hpp"
 #include "AIProcessor.hpp"

@@ -14,7 +14,6 @@ inline double iou(Rect2f bb_test, Rect2f bb_gt)
 
 	if (un < DBL_EPSILON)
 		return 0;
-
 	return (double)(in / un);
 }
 
@@ -110,7 +109,7 @@ void ObjectTracker::update(vector<ObjectTrace> detected)
     {
         for (unsigned int i = 0; i < trkNum; ++i)
             if (assignment[i] == -1) // unassigned label will be set as -1 in the assignment algorithm
-                unmatchedTrajectories.insert(i);
+                unmatchedTrajectories.insert(i);             
     }
     else
         ;
@@ -127,7 +126,10 @@ void ObjectTracker::update(vector<ObjectTrace> detected)
             unmatchedDetections.insert(assignment[i]);
         }
         else
+        {
             matchedPairs.push_back(cv::Point(i, assignment[i]));
+        }
+            
     }
 
     ///////////////////////////////////////

@@ -441,317 +441,317 @@ src/AiCore/sort-tracker/TrackerManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.s
 .PHONY : src/AiCore/sort-tracker/TrackerManager.cpp.s
 
-src/AiEngines/Anpr/AnprDetector.o: src/AiEngines/Anpr/AnprDetector.cpp.o
-.PHONY : src/AiEngines/Anpr/AnprDetector.o
+src/AiEngines/ITS/Anpr/AnprDetector.o: src/AiEngines/ITS/Anpr/AnprDetector.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/AnprDetector.o
 
 # target to build an object file
-src/AiEngines/Anpr/AnprDetector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.o
-.PHONY : src/AiEngines/Anpr/AnprDetector.cpp.o
+src/AiEngines/ITS/Anpr/AnprDetector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/AnprDetector.cpp.o
 
-src/AiEngines/Anpr/AnprDetector.i: src/AiEngines/Anpr/AnprDetector.cpp.i
-.PHONY : src/AiEngines/Anpr/AnprDetector.i
+src/AiEngines/ITS/Anpr/AnprDetector.i: src/AiEngines/ITS/Anpr/AnprDetector.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/AnprDetector.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/AnprDetector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.i
-.PHONY : src/AiEngines/Anpr/AnprDetector.cpp.i
+src/AiEngines/ITS/Anpr/AnprDetector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/AnprDetector.cpp.i
 
-src/AiEngines/Anpr/AnprDetector.s: src/AiEngines/Anpr/AnprDetector.cpp.s
-.PHONY : src/AiEngines/Anpr/AnprDetector.s
+src/AiEngines/ITS/Anpr/AnprDetector.s: src/AiEngines/ITS/Anpr/AnprDetector.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/AnprDetector.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/AnprDetector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprDetector.cpp.s
-.PHONY : src/AiEngines/Anpr/AnprDetector.cpp.s
+src/AiEngines/ITS/Anpr/AnprDetector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprDetector.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/AnprDetector.cpp.s
 
-src/AiEngines/Anpr/AnprRecognizer.o: src/AiEngines/Anpr/AnprRecognizer.cpp.o
-.PHONY : src/AiEngines/Anpr/AnprRecognizer.o
+src/AiEngines/ITS/Anpr/AnprRecognizer.o: src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/AnprRecognizer.o
 
 # target to build an object file
-src/AiEngines/Anpr/AnprRecognizer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.o
-.PHONY : src/AiEngines/Anpr/AnprRecognizer.cpp.o
+src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.o
 
-src/AiEngines/Anpr/AnprRecognizer.i: src/AiEngines/Anpr/AnprRecognizer.cpp.i
-.PHONY : src/AiEngines/Anpr/AnprRecognizer.i
+src/AiEngines/ITS/Anpr/AnprRecognizer.i: src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/AnprRecognizer.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/AnprRecognizer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.i
-.PHONY : src/AiEngines/Anpr/AnprRecognizer.cpp.i
+src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.i
 
-src/AiEngines/Anpr/AnprRecognizer.s: src/AiEngines/Anpr/AnprRecognizer.cpp.s
-.PHONY : src/AiEngines/Anpr/AnprRecognizer.s
+src/AiEngines/ITS/Anpr/AnprRecognizer.s: src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/AnprRecognizer.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/AnprRecognizer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/AnprRecognizer.cpp.s
-.PHONY : src/AiEngines/Anpr/AnprRecognizer.cpp.s
+src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/AnprRecognizer.cpp.s
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.o: src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.o: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.o
 
 # target to build an object file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.o
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.i: src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.i: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.i
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.s: src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.s: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.cpp.s
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.o: src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.o: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.o
 
 # target to build an object file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.o
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.i: src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.i: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.i
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.s: src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.s: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.cpp.s
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.o: src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.o: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.o
 
 # target to build an object file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.o
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.i: src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.i: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.i
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.s: src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.s: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.cpp.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.cpp.s
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.o: src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.o: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.o
 
 # target to build an object file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.o
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.i: src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.i: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.i
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.s: src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.s: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.cpp.s
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.o: src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.o: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.o
 
 # target to build an object file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.o
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.i: src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.i: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.i
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.s: src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.s: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.cpp.s
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.o: src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.o: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.o
 
 # target to build an object file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.o
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.i: src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.i: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.i
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.s: src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.s: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.cpp.s
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.o: src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.o: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.o
 
 # target to build an object file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.o
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.i: src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.i: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.i
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.s: src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.s: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.cpp.s
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.o: src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.o: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.o
 
 # target to build an object file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.o
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.i: src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.i: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.i
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.s: src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.s: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.cpp.s
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.o: src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.o: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.o
 
 # target to build an object file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.o
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.i: src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.i: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.i
 
 # target to preprocess a source file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.i
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.i
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.i
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.i
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.s: src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.s: src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.s
 
 # target to generate assembly for a file
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
-.PHONY : src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
+.PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
 
-src/AiEngines/Traffic/Oppose.o: src/AiEngines/Traffic/Oppose.cpp.o
-.PHONY : src/AiEngines/Traffic/Oppose.o
+src/AiEngines/ITS/VehicleDetector.o: src/AiEngines/ITS/VehicleDetector.cpp.o
+.PHONY : src/AiEngines/ITS/VehicleDetector.o
 
 # target to build an object file
-src/AiEngines/Traffic/Oppose.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.o
-.PHONY : src/AiEngines/Traffic/Oppose.cpp.o
+src/AiEngines/ITS/VehicleDetector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o
+.PHONY : src/AiEngines/ITS/VehicleDetector.cpp.o
 
-src/AiEngines/Traffic/Oppose.i: src/AiEngines/Traffic/Oppose.cpp.i
-.PHONY : src/AiEngines/Traffic/Oppose.i
+src/AiEngines/ITS/VehicleDetector.i: src/AiEngines/ITS/VehicleDetector.cpp.i
+.PHONY : src/AiEngines/ITS/VehicleDetector.i
 
 # target to preprocess a source file
-src/AiEngines/Traffic/Oppose.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.i
-.PHONY : src/AiEngines/Traffic/Oppose.cpp.i
+src/AiEngines/ITS/VehicleDetector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.i
+.PHONY : src/AiEngines/ITS/VehicleDetector.cpp.i
 
-src/AiEngines/Traffic/Oppose.s: src/AiEngines/Traffic/Oppose.cpp.s
-.PHONY : src/AiEngines/Traffic/Oppose.s
+src/AiEngines/ITS/VehicleDetector.s: src/AiEngines/ITS/VehicleDetector.cpp.s
+.PHONY : src/AiEngines/ITS/VehicleDetector.s
 
 # target to generate assembly for a file
-src/AiEngines/Traffic/Oppose.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/Oppose.cpp.s
-.PHONY : src/AiEngines/Traffic/Oppose.cpp.s
+src/AiEngines/ITS/VehicleDetector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.s
+.PHONY : src/AiEngines/ITS/VehicleDetector.cpp.s
 
-src/AiEngines/Traffic/VehicleDetector.o: src/AiEngines/Traffic/VehicleDetector.cpp.o
-.PHONY : src/AiEngines/Traffic/VehicleDetector.o
+src/AiEngines/ITS/Violation/Oppose.o: src/AiEngines/ITS/Violation/Oppose.cpp.o
+.PHONY : src/AiEngines/ITS/Violation/Oppose.o
 
 # target to build an object file
-src/AiEngines/Traffic/VehicleDetector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.o
-.PHONY : src/AiEngines/Traffic/VehicleDetector.cpp.o
+src/AiEngines/ITS/Violation/Oppose.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o
+.PHONY : src/AiEngines/ITS/Violation/Oppose.cpp.o
 
-src/AiEngines/Traffic/VehicleDetector.i: src/AiEngines/Traffic/VehicleDetector.cpp.i
-.PHONY : src/AiEngines/Traffic/VehicleDetector.i
+src/AiEngines/ITS/Violation/Oppose.i: src/AiEngines/ITS/Violation/Oppose.cpp.i
+.PHONY : src/AiEngines/ITS/Violation/Oppose.i
 
 # target to preprocess a source file
-src/AiEngines/Traffic/VehicleDetector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.i
-.PHONY : src/AiEngines/Traffic/VehicleDetector.cpp.i
+src/AiEngines/ITS/Violation/Oppose.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.i
+.PHONY : src/AiEngines/ITS/Violation/Oppose.cpp.i
 
-src/AiEngines/Traffic/VehicleDetector.s: src/AiEngines/Traffic/VehicleDetector.cpp.s
-.PHONY : src/AiEngines/Traffic/VehicleDetector.s
+src/AiEngines/ITS/Violation/Oppose.s: src/AiEngines/ITS/Violation/Oppose.cpp.s
+.PHONY : src/AiEngines/ITS/Violation/Oppose.s
 
 # target to generate assembly for a file
-src/AiEngines/Traffic/VehicleDetector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/Traffic/VehicleDetector.cpp.s
-.PHONY : src/AiEngines/Traffic/VehicleDetector.cpp.s
+src/AiEngines/ITS/Violation/Oppose.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.s
+.PHONY : src/AiEngines/ITS/Violation/Oppose.cpp.s
 
 src/examples/Anpr.o: src/examples/Anpr.cpp.o
 .PHONY : src/examples/Anpr.o
@@ -945,45 +945,45 @@ help:
 	@echo "... src/AiCore/sort-tracker/TrackerManager.o"
 	@echo "... src/AiCore/sort-tracker/TrackerManager.i"
 	@echo "... src/AiCore/sort-tracker/TrackerManager.s"
-	@echo "... src/AiEngines/Anpr/AnprDetector.o"
-	@echo "... src/AiEngines/Anpr/AnprDetector.i"
-	@echo "... src/AiEngines/Anpr/AnprDetector.s"
-	@echo "... src/AiEngines/Anpr/AnprRecognizer.o"
-	@echo "... src/AiEngines/Anpr/AnprRecognizer.i"
-	@echo "... src/AiEngines/Anpr/AnprRecognizer.s"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.o"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.i"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.s"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.o"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.i"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/clipper.s"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.o"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.i"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/config.s"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.o"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.i"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_cls.s"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.o"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.i"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_det.s"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.o"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.i"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/ocr_rec.s"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.o"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.i"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/postprocess_op.s"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.o"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.i"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/preprocess_op.s"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.o"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.i"
-	@echo "... src/AiEngines/Anpr/PaddleOCR-Linux-x64/utility.s"
-	@echo "... src/AiEngines/Traffic/Oppose.o"
-	@echo "... src/AiEngines/Traffic/Oppose.i"
-	@echo "... src/AiEngines/Traffic/Oppose.s"
-	@echo "... src/AiEngines/Traffic/VehicleDetector.o"
-	@echo "... src/AiEngines/Traffic/VehicleDetector.i"
-	@echo "... src/AiEngines/Traffic/VehicleDetector.s"
+	@echo "... src/AiEngines/ITS/Anpr/AnprDetector.o"
+	@echo "... src/AiEngines/ITS/Anpr/AnprDetector.i"
+	@echo "... src/AiEngines/ITS/Anpr/AnprDetector.s"
+	@echo "... src/AiEngines/ITS/Anpr/AnprRecognizer.o"
+	@echo "... src/AiEngines/ITS/Anpr/AnprRecognizer.i"
+	@echo "... src/AiEngines/ITS/Anpr/AnprRecognizer.s"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.o"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.i"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/PaddleOCRx64.s"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.o"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.i"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/clipper.s"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.o"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.i"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/config.s"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.o"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.i"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_cls.s"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.o"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.i"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_det.s"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.o"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.i"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/ocr_rec.s"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.o"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.i"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/postprocess_op.s"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.o"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.i"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/preprocess_op.s"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.o"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.i"
+	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.s"
+	@echo "... src/AiEngines/ITS/VehicleDetector.o"
+	@echo "... src/AiEngines/ITS/VehicleDetector.i"
+	@echo "... src/AiEngines/ITS/VehicleDetector.s"
+	@echo "... src/AiEngines/ITS/Violation/Oppose.o"
+	@echo "... src/AiEngines/ITS/Violation/Oppose.i"
+	@echo "... src/AiEngines/ITS/Violation/Oppose.s"
 	@echo "... src/examples/Anpr.o"
 	@echo "... src/examples/Anpr.i"
 	@echo "... src/examples/Anpr.s"

@@ -73,12 +73,12 @@ src/AiCore/sort-tracker/TrackerManager.cpp
 src/AiCore/sort-tracker/RoadLine.cpp
 src/AiCore/sort-tracker/ObjectTracking.cpp
 
-src/AiEngines/Anpr/PaddleOCR-Linux-x64/*.cpp
-src/AiEngines/Anpr/AnprDetector.cpp
-src/AiEngines/Anpr/AnprRecognizer.cpp
+src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/*.cpp
+src/AiEngines/ITS/Anpr/AnprDetector.cpp
+src/AiEngines/ITS/Anpr/AnprRecognizer.cpp
 
-src/AiEngines/Traffic/VehicleDetector.cpp
-src/AiEngines/Traffic/Oppose.cpp
+src/AiEngines/ITS/VehicleDetector.cpp
+src/AiEngines/ITS/Violation/Oppose.cpp
 )
                     
 add_executable(${PROJECT_NAME} ${SOURCES})
