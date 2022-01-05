@@ -11,13 +11,15 @@
 #include "AIProcessor.hpp"
 #include <pthread.h>
 #include <signal.h>
-#include "../AiEngines/ITS/Violation/Oppose.hpp"
+
+#include "../AiEngines/ITS/TrafficManager.hpp"
 
 class Traffic : public AIProcessor
 {
 private:
     /* data */
-    Oppose* m_oppose = nullptr;
+    
+    airuntime::aiengine::its::TrafficManager * m_trafficManager;
     FrameManager* m_frameManager = nullptr;
     pthread_mutex_t m_mutex = PTHREAD_MUTEX_INITIALIZER;
     pthread_t m_thread;

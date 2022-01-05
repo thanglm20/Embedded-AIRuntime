@@ -12,34 +12,20 @@
 #include "DecoderThread.hpp"
 #include "Traffic.hpp"
 #include "Anpr.hpp"
-class Myclass
-{
-    public:
-        Myclass(){}
-        ~Myclass(){}
-        void loop(){
-            cout << "This: " << this << endl;
-        }
-        
-        int sum(int a = 0, int b =0)
-        {
-            return (2*a + 3*b);
-        }
-};
+#include "Extractor.hpp"
+
 
 int main(int argc, char** args){
 
 
     std::cout << "=============>Main<==================\n";
     FrameManager* frameManager = new FrameManager();
-    AIProcessor* processor = new Traffic(frameManager);
+    AIProcessor* processor = new Extractor(frameManager);
     DecoderThread* decoder = new DecoderThread(frameManager);
 
-    processor->run();
     decoder->run();
-    
-    Myclass my;
-
+    usleep(100000);
+    processor->run();
     while(1)
     {
         // cv::Mat frame = frameManager->getFrame();
@@ -49,7 +35,7 @@ int main(int argc, char** args){
         //     char key = cv::waitKey(1);
         //     if(key == 'q') break;
         // }
-        my.loop();
+        
         sleep(1); 
 
     }

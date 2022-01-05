@@ -14,16 +14,12 @@
 #include "../../../AiCore/sort-tracker/ObjectTracking.hpp"
 
 
-
-
 using namespace std;
 using namespace cv;
 
 
 namespace airuntime{
     namespace aiengine{
-
-
 
 class AnprRecognizer
 {

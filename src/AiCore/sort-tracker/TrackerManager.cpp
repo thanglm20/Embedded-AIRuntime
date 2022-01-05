@@ -13,6 +13,13 @@
 #include <unistd.h>
 #include <set>
 
+TrackerManager::TrackerManager(TrackingTrace& trackingTrace)
+{
+    this->tracker = KalmanTracker(trackingTrace.m_rect);
+    this->tracer.m_type = trackingTrace.m_type;
+    this->tracer.m_score = trackingTrace.m_score;
+    this->tracer.isOutOfFrame = false;
+}
 
 TrackerManager::TrackerManager(Rect2f rect, string typeObject)
 {
@@ -24,6 +31,19 @@ TrackerManager::TrackerManager(Rect2f rect, string typeObject)
 TrackerManager::~TrackerManager()
 {
 
+}
+void TrackerManager::update(TrackingTrace& trackingTrace)
+{   
+    this->tracker.update(trackingTrace.m_rect);
+    this->tracer.isOutOfFrame = false;
+    this->tracer.m_rect = trackingTrace.m_rect;
+    this->tracer.m_score = trackingTrace.m_score;
+    this->tracer.m_ID = this->tracker.m_id + 1;
+    this->tracer.m_trace.push_back(this->tracker.get_point());
+    if (this->tracer.m_trace.size() > max_trace_length)
+    {
+        this->tracer.m_trace.pop_front(this->tracer.m_trace.size() - max_trace_length);
+    }
 }
 
 void TrackerManager::update(Rect2f rect)

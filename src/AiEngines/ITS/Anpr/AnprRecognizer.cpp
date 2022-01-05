@@ -14,8 +14,6 @@ AnprRecognizer::AnprRecognizer(Nations nation)
     this->m_nations = nation;
     this->detector = new AnprDetector(this->m_nations);
     this->tracker = new ObjectTracking();
-    
-
     this->listPlateTracks.clear();
 }
 

@@ -19,14 +19,18 @@ private:
     cv::Mat m_frame;
     float m_fps = 0;
     static unsigned long long iFrameCounter;
+    bool m_flNewFrame = false;
 public:
     FrameManager();
     ~FrameManager();
     void updateFrame(const cv::Mat& frame);
     void updateFrame(const cv::Mat& frame, float fps);
+    void clearFrame();
     cv::Mat getFrame();
     float getFps();
     unsigned long long getFrameCounter();
+    bool isNewFrame();
+
 };
 
 

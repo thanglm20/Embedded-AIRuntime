@@ -61,6 +61,8 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "codecvt": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "forward_list": "cpp",
+        "valarray": "cpp"
     }
 }

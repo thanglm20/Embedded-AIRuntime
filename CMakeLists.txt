@@ -58,6 +58,7 @@ src/examples/DecoderThread.cpp
 src/examples/FrameManager.cpp
 src/examples/Traffic.cpp
 src/examples/Anpr.cpp
+src/examples/Extractor.cpp
 
 src/AiCore/AIUserFactory.cpp
 src/AiCore/snpe/SnpeExecutor.cpp
@@ -77,8 +78,10 @@ src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/*.cpp
 src/AiEngines/ITS/Anpr/AnprDetector.cpp
 src/AiEngines/ITS/Anpr/AnprRecognizer.cpp
 
-src/AiEngines/ITS/VehicleDetector.cpp
-src/AiEngines/ITS/Violation/Oppose.cpp
+src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp
+src/AiEngines/FeatureExtractor/FeatureExtractor.cpp
+
+src/AiEngines/ITS/TrafficManager.cpp
 )
                     
 add_executable(${PROJECT_NAME} ${SOURCES})

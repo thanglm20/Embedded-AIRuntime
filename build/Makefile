@@ -441,6 +441,54 @@ src/AiCore/sort-tracker/TrackerManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiCore/sort-tracker/TrackerManager.cpp.s
 .PHONY : src/AiCore/sort-tracker/TrackerManager.cpp.s
 
+src/AiEngines/FeatureExtractor/BackgroundSubtractor.o: src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.o
+.PHONY : src/AiEngines/FeatureExtractor/BackgroundSubtractor.o
+
+# target to build an object file
+src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.o
+.PHONY : src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.o
+
+src/AiEngines/FeatureExtractor/BackgroundSubtractor.i: src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.i
+.PHONY : src/AiEngines/FeatureExtractor/BackgroundSubtractor.i
+
+# target to preprocess a source file
+src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.i
+.PHONY : src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.i
+
+src/AiEngines/FeatureExtractor/BackgroundSubtractor.s: src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.s
+.PHONY : src/AiEngines/FeatureExtractor/BackgroundSubtractor.s
+
+# target to generate assembly for a file
+src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.s
+.PHONY : src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp.s
+
+src/AiEngines/FeatureExtractor/FeatureExtractor.o: src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.o
+.PHONY : src/AiEngines/FeatureExtractor/FeatureExtractor.o
+
+# target to build an object file
+src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.o
+.PHONY : src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.o
+
+src/AiEngines/FeatureExtractor/FeatureExtractor.i: src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.i
+.PHONY : src/AiEngines/FeatureExtractor/FeatureExtractor.i
+
+# target to preprocess a source file
+src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.i
+.PHONY : src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.i
+
+src/AiEngines/FeatureExtractor/FeatureExtractor.s: src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.s
+.PHONY : src/AiEngines/FeatureExtractor/FeatureExtractor.s
+
+# target to generate assembly for a file
+src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.s
+.PHONY : src/AiEngines/FeatureExtractor/FeatureExtractor.cpp.s
+
 src/AiEngines/ITS/Anpr/AnprDetector.o: src/AiEngines/ITS/Anpr/AnprDetector.cpp.o
 .PHONY : src/AiEngines/ITS/Anpr/AnprDetector.o
 
@@ -705,53 +753,29 @@ src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
 .PHONY : src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.s
 
-src/AiEngines/ITS/VehicleDetector.o: src/AiEngines/ITS/VehicleDetector.cpp.o
-.PHONY : src/AiEngines/ITS/VehicleDetector.o
+src/AiEngines/ITS/TrafficManager.o: src/AiEngines/ITS/TrafficManager.cpp.o
+.PHONY : src/AiEngines/ITS/TrafficManager.o
 
 # target to build an object file
-src/AiEngines/ITS/VehicleDetector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.o
-.PHONY : src/AiEngines/ITS/VehicleDetector.cpp.o
+src/AiEngines/ITS/TrafficManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/TrafficManager.cpp.o
+.PHONY : src/AiEngines/ITS/TrafficManager.cpp.o
 
-src/AiEngines/ITS/VehicleDetector.i: src/AiEngines/ITS/VehicleDetector.cpp.i
-.PHONY : src/AiEngines/ITS/VehicleDetector.i
-
-# target to preprocess a source file
-src/AiEngines/ITS/VehicleDetector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.i
-.PHONY : src/AiEngines/ITS/VehicleDetector.cpp.i
-
-src/AiEngines/ITS/VehicleDetector.s: src/AiEngines/ITS/VehicleDetector.cpp.s
-.PHONY : src/AiEngines/ITS/VehicleDetector.s
-
-# target to generate assembly for a file
-src/AiEngines/ITS/VehicleDetector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/VehicleDetector.cpp.s
-.PHONY : src/AiEngines/ITS/VehicleDetector.cpp.s
-
-src/AiEngines/ITS/Violation/Oppose.o: src/AiEngines/ITS/Violation/Oppose.cpp.o
-.PHONY : src/AiEngines/ITS/Violation/Oppose.o
-
-# target to build an object file
-src/AiEngines/ITS/Violation/Oppose.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o
-.PHONY : src/AiEngines/ITS/Violation/Oppose.cpp.o
-
-src/AiEngines/ITS/Violation/Oppose.i: src/AiEngines/ITS/Violation/Oppose.cpp.i
-.PHONY : src/AiEngines/ITS/Violation/Oppose.i
+src/AiEngines/ITS/TrafficManager.i: src/AiEngines/ITS/TrafficManager.cpp.i
+.PHONY : src/AiEngines/ITS/TrafficManager.i
 
 # target to preprocess a source file
-src/AiEngines/ITS/Violation/Oppose.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.i
-.PHONY : src/AiEngines/ITS/Violation/Oppose.cpp.i
+src/AiEngines/ITS/TrafficManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/TrafficManager.cpp.i
+.PHONY : src/AiEngines/ITS/TrafficManager.cpp.i
 
-src/AiEngines/ITS/Violation/Oppose.s: src/AiEngines/ITS/Violation/Oppose.cpp.s
-.PHONY : src/AiEngines/ITS/Violation/Oppose.s
+src/AiEngines/ITS/TrafficManager.s: src/AiEngines/ITS/TrafficManager.cpp.s
+.PHONY : src/AiEngines/ITS/TrafficManager.s
 
 # target to generate assembly for a file
-src/AiEngines/ITS/Violation/Oppose.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.s
-.PHONY : src/AiEngines/ITS/Violation/Oppose.cpp.s
+src/AiEngines/ITS/TrafficManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/TrafficManager.cpp.s
+.PHONY : src/AiEngines/ITS/TrafficManager.cpp.s
 
 src/examples/Anpr.o: src/examples/Anpr.cpp.o
 .PHONY : src/examples/Anpr.o
@@ -800,6 +824,30 @@ src/examples/DecoderThread.s: src/examples/DecoderThread.cpp.s
 src/examples/DecoderThread.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.s
 .PHONY : src/examples/DecoderThread.cpp.s
+
+src/examples/Extractor.o: src/examples/Extractor.cpp.o
+.PHONY : src/examples/Extractor.o
+
+# target to build an object file
+src/examples/Extractor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/Extractor.cpp.o
+.PHONY : src/examples/Extractor.cpp.o
+
+src/examples/Extractor.i: src/examples/Extractor.cpp.i
+.PHONY : src/examples/Extractor.i
+
+# target to preprocess a source file
+src/examples/Extractor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/Extractor.cpp.i
+.PHONY : src/examples/Extractor.cpp.i
+
+src/examples/Extractor.s: src/examples/Extractor.cpp.s
+.PHONY : src/examples/Extractor.s
+
+# target to generate assembly for a file
+src/examples/Extractor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/examples/Extractor.cpp.s
+.PHONY : src/examples/Extractor.cpp.s
 
 src/examples/FrameManager.o: src/examples/FrameManager.cpp.o
 .PHONY : src/examples/FrameManager.o
@@ -945,6 +993,12 @@ help:
 	@echo "... src/AiCore/sort-tracker/TrackerManager.o"
 	@echo "... src/AiCore/sort-tracker/TrackerManager.i"
 	@echo "... src/AiCore/sort-tracker/TrackerManager.s"
+	@echo "... src/AiEngines/FeatureExtractor/BackgroundSubtractor.o"
+	@echo "... src/AiEngines/FeatureExtractor/BackgroundSubtractor.i"
+	@echo "... src/AiEngines/FeatureExtractor/BackgroundSubtractor.s"
+	@echo "... src/AiEngines/FeatureExtractor/FeatureExtractor.o"
+	@echo "... src/AiEngines/FeatureExtractor/FeatureExtractor.i"
+	@echo "... src/AiEngines/FeatureExtractor/FeatureExtractor.s"
 	@echo "... src/AiEngines/ITS/Anpr/AnprDetector.o"
 	@echo "... src/AiEngines/ITS/Anpr/AnprDetector.i"
 	@echo "... src/AiEngines/ITS/Anpr/AnprDetector.s"
@@ -978,18 +1032,18 @@ help:
 	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.o"
 	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.i"
 	@echo "... src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.s"
-	@echo "... src/AiEngines/ITS/VehicleDetector.o"
-	@echo "... src/AiEngines/ITS/VehicleDetector.i"
-	@echo "... src/AiEngines/ITS/VehicleDetector.s"
-	@echo "... src/AiEngines/ITS/Violation/Oppose.o"
-	@echo "... src/AiEngines/ITS/Violation/Oppose.i"
-	@echo "... src/AiEngines/ITS/Violation/Oppose.s"
+	@echo "... src/AiEngines/ITS/TrafficManager.o"
+	@echo "... src/AiEngines/ITS/TrafficManager.i"
+	@echo "... src/AiEngines/ITS/TrafficManager.s"
 	@echo "... src/examples/Anpr.o"
 	@echo "... src/examples/Anpr.i"
 	@echo "... src/examples/Anpr.s"
 	@echo "... src/examples/DecoderThread.o"
 	@echo "... src/examples/DecoderThread.i"
 	@echo "... src/examples/DecoderThread.s"
+	@echo "... src/examples/Extractor.o"
+	@echo "... src/examples/Extractor.i"
+	@echo "... src/examples/Extractor.s"
 	@echo "... src/examples/FrameManager.o"
 	@echo "... src/examples/FrameManager.i"
 	@echo "... src/examples/FrameManager.s"

@@ -336,27 +336,26 @@ CMakeFiles/ai_infer.dir/src/examples/Traffic.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/Oppose.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/TrafficManager.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/AIUserFactory.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/AIExecutor.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/AITypeData.hpp \
  /usr/include/c++/7/fstream \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
  /usr/include/c++/7/bits/fstream.tcc \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/ObjectTracking.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/ObjectTracker.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/ObjectTracking.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/ObjectTracker.hpp \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/Hungarian.h \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/KalmanTracker.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/Hungarian.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/KalmanTracker.h \
  /usr/local/include/opencv4/opencv2/highgui/highgui.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/TrackerManager.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/../AITypeData.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/RoadLine.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../VehicleDetector.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/AIUserFactory.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/AIExecutor.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/AITypeData.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../TrafficConfig.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/AITypeData.hpp
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/TrackerManager.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/../AITypeData.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/RoadLine.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/TrafficConfig.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/AITypeData.hpp

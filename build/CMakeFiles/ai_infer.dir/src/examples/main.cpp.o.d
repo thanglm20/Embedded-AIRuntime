@@ -342,25 +342,24 @@ CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Traffic.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/AIProcessor.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/Oppose.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/TrafficManager.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/AIUserFactory.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/AIExecutor.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/AITypeData.hpp \
  /usr/include/c++/7/fstream \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
  /usr/include/c++/7/bits/fstream.tcc \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/ObjectTracking.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/ObjectTracker.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/Hungarian.h \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/KalmanTracker.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/ObjectTracking.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/ObjectTracker.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/Hungarian.h \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/KalmanTracker.h \
  /usr/local/include/opencv4/opencv2/highgui/highgui.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/TrackerManager.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/../AITypeData.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/RoadLine.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../VehicleDetector.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/AIUserFactory.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/AIExecutor.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/AITypeData.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../TrafficConfig.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/AITypeData.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/TrackerManager.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/../AITypeData.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/RoadLine.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/TrafficConfig.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/AITypeData.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Anpr.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Anpr/AnprRecognizer.hpp \
  /usr/include/c++/7/regex /usr/include/c++/7/bitset \
@@ -383,4 +382,20 @@ CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Anpr/AnprConfig.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Anpr/LicenseOcr.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Anpr/../../../AiCore/sort-tracker/ObjectTracking.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiCore/AIUserFactory.hpp
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiCore/AIUserFactory.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Extractor.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/FeatureExtractor/FeatureExtractor.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/FeatureExtractor/../ITS/TrafficManager.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/FeatureExtractor/BackgroundSubtractor.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/FeatureExtractor/../../nlohmann/json.hpp \
+ /usr/include/c++/7/numeric /usr/include/c++/7/bits/stl_numeric.h \
+ /usr/include/c++/7/forward_list /usr/include/c++/7/bits/forward_list.h \
+ /usr/include/c++/7/bits/forward_list.tcc /usr/include/c++/7/valarray \
+ /usr/include/c++/7/bits/valarray_array.h \
+ /usr/include/c++/7/bits/valarray_array.tcc \
+ /usr/include/c++/7/bits/valarray_before.h \
+ /usr/include/c++/7/bits/slice_array.h \
+ /usr/include/c++/7/bits/valarray_after.h \
+ /usr/include/c++/7/bits/gslice.h /usr/include/c++/7/bits/gslice_array.h \
+ /usr/include/c++/7/bits/mask_array.h \
+ /usr/include/c++/7/bits/indirect_array.h /usr/include/c++/7/cassert

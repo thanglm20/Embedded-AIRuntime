@@ -34,7 +34,7 @@ public:
     ObjectTracker(/* args */);
     ~ObjectTracker();
     vector<std::unique_ptr<TrackerManager>> trackers;
-    void update(vector<ObjectTrace> detected);
+    void update(vector<ObjectTrace>& detected);
     vector<TrackingTrace> getTracks();
 };
 

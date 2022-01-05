@@ -74,6 +74,7 @@ struct TrackingTrace
     Rect2f m_rect;                     // box of object track
     string m_type;                     // Objects type name or empty value
     size_t m_ID = 0;                   // Objects ID
+    float m_score = 0.0;
     bool isOutOfFrame = false;             // if object Out of Frame
 };
 
@@ -86,12 +87,14 @@ private:
     int max_age = 10;
     int min_confirmed = 2;
 public:
+    TrackerManager(TrackingTrace& trackingTrace);
     TrackerManager(Rect2f rect, string typeObject);
     ~TrackerManager();
     KalmanTracker tracker;
     TrackingTrace tracer;
     TrackingTrace get() const;
     Rect2f predict();
+    void update(TrackingTrace& trackingTrace);
     void update(Rect2f rect);
     bool isConfirmed();
     bool isDeleted();

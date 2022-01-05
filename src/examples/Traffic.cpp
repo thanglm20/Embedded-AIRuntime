@@ -42,10 +42,9 @@ void* Traffic::threadFunc(void* args)
 void Traffic::process()
 {
     std::cout << "Creating AI processor\n";
-    this->m_oppose = new Oppose();
+    
     // config
-    settingsOppose settings;
-    this->m_oppose->set(settings);
+    this->m_trafficManager = new airuntime::aiengine::its::TrafficManager();
     while(1)
     {
 
@@ -57,22 +56,29 @@ void Traffic::process()
         if(!frame.empty()) 
         {
             auto start = std::chrono::high_resolution_clock::now();    
-            std::vector<outDataOppose> out;
+            // TODO
+            std::vector<airuntime::aiengine::its::VehicleTrace> outVehicles; 
+            this->m_trafficManager->run(frame, outVehicles);
 
-            this->m_oppose->update(frame, out);
-            
             auto end = std::chrono::high_resolution_clock::now();    
             auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
             cout << "Performance: AI = " << 1000.0 / duration.count() <<  "FPS, Decoder = " 
                 << this->m_frameManager->getFps() << "FPS" << endl;
             cout << "--------------\n";
-            for(const auto p : out)
+            
+            // post process
+            for(auto v : outVehicles)
             {
-                rectangle(frame, p.rect, Scalar(255, 255, 0), 2, 8);
+                rectangle(frame, v.rect, cv::Scalar(255, 255, 255), 2, 8);
+                char text[100];
+                sprintf(text, "%d", v.track_id);
+                putText(frame, text, cv::Point(v.rect.x, v.rect.y), FONT_HERSHEY_COMPLEX, 1.0, cv::Scalar(255, 255, 255));
             }
+
             cv::imshow("traffic", frame);
             cv::waitKey(1);
         }
+        
         pthread_mutex_unlock(&this->m_mutex); 
     }
 }

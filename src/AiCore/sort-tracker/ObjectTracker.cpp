@@ -45,7 +45,7 @@ ObjectTracker::~ObjectTracker()
 
 }
 
-void ObjectTracker::update(vector<ObjectTrace> detected)
+void ObjectTracker::update(vector<ObjectTrace>& detected)
 {   
     vector<Rect_<float>> detectedBox;
     for(auto det : detected) detectedBox.push_back(det.rect);
@@ -141,14 +141,23 @@ void ObjectTracker::update(vector<ObjectTrace> detected)
     {
         trkIdx = matchedPairs[i].x;
         detIdx = matchedPairs[i].y;
-        this->trackers[trkIdx]->update(detectedBox[detIdx]);
+        // this->trackers[trkIdx]->update(detectedBox[detIdx]);
+        TrackingTrace objTrace;
+        objTrace.m_rect = detectedBox[detIdx];
+        objTrace.m_score = detected[detIdx].score;
+        this->trackers[trkIdx]->update(objTrace);
     }
 
     // create and initialise new this->trackers for unmatched detections
     // or update if object is out of frame and object was not deleted
     for (auto umd : unmatchedDetections)
     {
-        this->trackers.push_back(std::make_unique<TrackerManager>(detectedBox[umd], detected[umd].label));
+        //this->trackers.push_back(std::make_unique<TrackerManager>(detectedBox[umd], detected[umd].label));
+        TrackingTrace objTrace;
+        objTrace.m_rect = detectedBox[umd];
+        objTrace.m_type = detected[umd].label;
+        objTrace.m_score = detected[umd].score;
+        this->trackers.push_back(std::make_unique<TrackerManager>(objTrace));
     }
 }
 
