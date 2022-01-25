@@ -32,32 +32,29 @@
 #include <array>
 #include <fstream>
 #include <math.h>
-#include "../../../AiCore/sort-tracker/ObjectTracking.hpp"
-#include "../VehicleDetector.hpp"
+#include "Violation.hpp"
 
 #define NUMBER_LINE_CHECK 10
-using namespace std;
-using namespace cv;
 
-#define THRES_DETECT_VEHICLE 0.5
 
-struct LinearEquationStartLine{
-    double A;
-    double B;
-    double C;
-};
 
-struct VecLine{
-    Point tail;
-    Point head;
-};
+// struct LinearEquationStartLine{
+//     double A;
+//     double B;
+//     double C;
+// };
 
-struct settingsOppose{
-    vector<Point> startLine = vector<Point>(2);
-    vector<Point> endLine = vector<Point>(2); 
-    vector<VecLine> listLine;
-    vector<string> allowedObjects; 
-};
+// struct VecLine{
+//     Point tail;
+//     Point head;
+// };
+
+// struct settingsOppose{
+//     vector<Point> startLine = vector<Point>(2);
+//     vector<Point> endLine = vector<Point>(2); 
+//     vector<VecLine> listLine;
+//     vector<string> allowedObjects; 
+// };
 
 struct outDataOppose{
     cv::Rect rect;
@@ -71,22 +68,19 @@ struct outDataOppose{
     bool isNewEvent = false;
 };
 
-class Oppose
+class Oppose : public Violation
 {
 private:
     /* data */
-    LinearEquationStartLine factorStartLine;
-    settingsOppose settings;
-    ObjectTracking* tracker = nullptr;
-    VehicleDetector* m_detector = nullptr;
-    vector<outDataOppose> listTracked;
+    LinearEquationStartLine m_factorStartLine;
+    settingsOppose m_settings;
+    vector<outDataOppose> m_listTracked;
 
 public:
-    Oppose();
-    Oppose(settingsOppose settings);
+
+    explicit Oppose(ViolationSettings settings);
     ~Oppose();
-    int init(settingsOppose settings);
-    int set(settingsOppose settings);
-    int update(Mat& frame, vector<outDataOppose>& outData);
+    STATUS init () override;
+    STATUS process (const cv::Mat& frame, ObjectTracking* tracker, std::vector<TrackingTrace>& tracks) override;
 };
 #endif

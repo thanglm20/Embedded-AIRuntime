@@ -13,19 +13,19 @@ FeatureExtractor::~FeatureExtractor()
 {
 
 }
-void FeatureExtractor::clearSaving()
+void FeatureExtractor::clearData()
 {
     // make folder to save
     char cmd[150];
     sprintf(cmd, "rm -rf %s/*",  PATH_EXTRACTOR);
     system(cmd);
 }
-void FeatureExtractor::run(cv::Mat& img, int timeCounter)
+
+void FeatureExtractor::run(cv::Mat& img, unsigned long frameCounter)
 {
     // count frame
-    this->m_nFrame++;
-    if(this->m_nFrame > MAX_FRAME_PER_DAY)
-        this->m_nFrame = 0;
+    this->m_nFrame = frameCounter;
+
     // count time
     this->m_fTime = cv::getTickCount() / getTickFrequency() - this->m_stickStart;
     if(this->m_fTime > MAX_FRAME_PER_DAY)
@@ -90,49 +90,51 @@ void FeatureExtractor::run(cv::Mat& img, int timeCounter)
             cv::Mat imgObj = img(v.rect).clone();
             cv::imwrite(path, imgObj);
         }
-    }
+    }  
+}
 
-    if(this->m_fTime >= timeCounter && (int)this->m_fTime % timeCounter == 0)
+void FeatureExtractor::saveData(){
+
+    // this->clearData();
+    // get json
+    for(auto v : this->m_listVehicles)
     {
-
-        // get json
-        for(auto v : this->m_listVehicles)
+        json j;
+        j["label"] = v.label;
+        j["id"]  = v.ID;
+        j["count"] = v.count;
+        for(auto o : v.info)
         {
-            json j;
-            j["label"] = v.label;
-            j["id"]  = v.ID;
-            j["count"] = v.count;
-            for(auto o : v.info)
-            {
-                json b;
-                b["frame"] = o.frame;
-                b["time"] = o.time;
-                b["box"].push_back(o.rect.x);
-                b["box"].push_back(o.rect.y);
-                b["box"].push_back(o.rect.width);
-                b["box"].push_back(o.rect.height);
-                j["frames"].push_back(b);
-            }
-            // outData.push_back(j); 
-            char pathJson[200];
-            // saving json
-            sprintf(pathJson, "%s/info.json", v.pathSaving);
-            std::ofstream output_file(pathJson);
-            output_file << j;
-            output_file.close();
-
+            json b;
+            b["frame"] = o.frame;
+            b["time"] = o.time;
+            b["box"].push_back(o.rect.x);
+            b["box"].push_back(o.rect.y);
+            b["box"].push_back(o.rect.width);
+            b["box"].push_back(o.rect.height);
+            j["frames"].push_back(b);
         }
-
-        //get background
-        cv::Mat background = this->m_subtractor->getBackground();
-        if(!background.empty())
-        {
-            char path[100];
-            sprintf(path, "%s/background.jpg", PATH_EXTRACTOR);
-            cv::imwrite(path, background);
-        }
-
+        // outData.push_back(j); 
+        char pathJson[200];
+        // saving json
+        sprintf(pathJson, "%s/info.json", v.pathSaving);
+        std::ofstream output_file(pathJson);
+        output_file << j;
+        output_file.close();
 
     }
-    
+
+    //get background
+    cv::Mat background = this->m_subtractor->getBackground();
+    if(!background.empty())
+    {
+        char path[100];
+        sprintf(path, "%s/background.jpg", PATH_EXTRACTOR);
+        cv::imwrite(path, background);
+    }
+
+    // reset variables
+    this->m_listVehicles.clear();
+    this->m_nFrame = 0;
+    this->m_stickStart = cv::getTickCount() / getTickFrequency();
 }

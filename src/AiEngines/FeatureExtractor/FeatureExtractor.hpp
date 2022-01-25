@@ -45,12 +45,14 @@ private:
     double m_fTime = 0.0;
     double m_stickStart = 0;
     std::vector<Features> m_listVehicles;
+    
 public:
     FeatureExtractor(/* args */);
     ~FeatureExtractor();
-    void run(cv::Mat& img, int timeCounter);
+    void run(cv::Mat& img, unsigned long frameCounter);
     cv::Mat getBackground();
-    void clearSaving();
+    void clearData();
+    void saveData();
 };
 
 

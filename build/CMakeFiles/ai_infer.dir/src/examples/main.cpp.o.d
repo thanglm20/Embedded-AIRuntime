@@ -358,9 +358,9 @@ CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/TrackerManager.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/../AITypeData.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/sort-tracker/RoadLine.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/TrafficConfig.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/../../AiCore/AITypeData.hpp \
- /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Anpr.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/Violation.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/AITypeData.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Violation/../../../AiCore/sort-tracker/ObjectTracking.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Anpr/AnprRecognizer.hpp \
  /usr/include/c++/7/regex /usr/include/c++/7/bitset \
  /usr/include/c++/7/iterator /usr/include/c++/7/bits/stream_iterator.h \
@@ -382,6 +382,8 @@ CMakeFiles/ai_infer.dir/src/examples/main.cpp.o: \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Anpr/AnprConfig.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Anpr/LicenseOcr.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Anpr/../../../AiCore/sort-tracker/ObjectTracking.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Anpr.hpp \
+ /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/ITS/Anpr/AnprRecognizer.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiCore/AIUserFactory.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/Extractor.hpp \
  /media/thanglmb/Bkav/AICAM/AIProject/AiCorex86_64/src/examples/../AiEngines/FeatureExtractor/FeatureExtractor.hpp \

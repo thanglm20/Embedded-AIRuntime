@@ -45,7 +45,7 @@ void Extractor::process()
     
     // config
     this->m_extracter = new FeatureExtractor();
-    this->m_extracter->clearSaving();
+    this->m_extracter->clearData();
     while(1)
     {
 
@@ -53,17 +53,16 @@ void Extractor::process()
         if(this->m_frameManager->isNewFrame())
         {
             cv::Mat frame0 = this->m_frameManager->getFrame();
+            unsigned long frameCounter = this->m_frameManager->getFrameCounter();
             cv::Mat frame ;
             frame0.copyTo(frame);
 
             if(!frame.empty()) 
             {
-                    
                 // TODO
-                auto start = std::chrono::high_resolution_clock::now();    
-                
+                auto start = std::chrono::high_resolution_clock::now();                  
                 std::vector<airuntime::aiengine::its::VehicleTrace> outVehicles; 
-                this->m_extracter->run(frame, 10); // extract after each 5s         
+                this->m_extracter->run(frame, frameCounter);    
                 auto end = std::chrono::high_resolution_clock::now();    
                 auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
                 // cout << "Performance: AI = " << 1000.0 / duration.count() <<  "FPS, Decoder = " 
@@ -71,7 +70,11 @@ void Extractor::process()
             }        
         }
         else
-        exit(0);
+        {
+            this->m_extracter->saveData();
+            std::cout << "Video ended, saved data successfully\n";
+            exit(0);
+        }
         pthread_mutex_unlock(&this->m_mutex); 
     }
 }

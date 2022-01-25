@@ -82,6 +82,7 @@ src/AiEngines/FeatureExtractor/BackgroundSubtractor.cpp
 src/AiEngines/FeatureExtractor/FeatureExtractor.cpp
 
 src/AiEngines/ITS/TrafficManager.cpp
+src/AiEngines/ITS/Violation/Oppose.cpp
 )
                     
 add_executable(${PROJECT_NAME} ${SOURCES})

@@ -777,6 +777,30 @@ src/AiEngines/ITS/TrafficManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/TrafficManager.cpp.s
 .PHONY : src/AiEngines/ITS/TrafficManager.cpp.s
 
+src/AiEngines/ITS/Violation/Oppose.o: src/AiEngines/ITS/Violation/Oppose.cpp.o
+.PHONY : src/AiEngines/ITS/Violation/Oppose.o
+
+# target to build an object file
+src/AiEngines/ITS/Violation/Oppose.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o
+.PHONY : src/AiEngines/ITS/Violation/Oppose.cpp.o
+
+src/AiEngines/ITS/Violation/Oppose.i: src/AiEngines/ITS/Violation/Oppose.cpp.i
+.PHONY : src/AiEngines/ITS/Violation/Oppose.i
+
+# target to preprocess a source file
+src/AiEngines/ITS/Violation/Oppose.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.i
+.PHONY : src/AiEngines/ITS/Violation/Oppose.cpp.i
+
+src/AiEngines/ITS/Violation/Oppose.s: src/AiEngines/ITS/Violation/Oppose.cpp.s
+.PHONY : src/AiEngines/ITS/Violation/Oppose.s
+
+# target to generate assembly for a file
+src/AiEngines/ITS/Violation/Oppose.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ai_infer.dir/build.make CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.s
+.PHONY : src/AiEngines/ITS/Violation/Oppose.cpp.s
+
 src/examples/Anpr.o: src/examples/Anpr.cpp.o
 .PHONY : src/examples/Anpr.o
 
@@ -1035,6 +1059,9 @@ help:
 	@echo "... src/AiEngines/ITS/TrafficManager.o"
 	@echo "... src/AiEngines/ITS/TrafficManager.i"
 	@echo "... src/AiEngines/ITS/TrafficManager.s"
+	@echo "... src/AiEngines/ITS/Violation/Oppose.o"
+	@echo "... src/AiEngines/ITS/Violation/Oppose.i"
+	@echo "... src/AiEngines/ITS/Violation/Oppose.s"
 	@echo "... src/examples/Anpr.o"
 	@echo "... src/examples/Anpr.i"
 	@echo "... src/examples/Anpr.s"

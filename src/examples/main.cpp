@@ -20,7 +20,7 @@ int main(int argc, char** args){
 
     std::cout << "=============>Main<==================\n";
     FrameManager* frameManager = new FrameManager();
-    AIProcessor* processor = new Extractor(frameManager);
+    AIProcessor* processor = new Traffic(frameManager);
     DecoderThread* decoder = new DecoderThread(frameManager);
 
     decoder->run();
@@ -37,7 +37,6 @@ int main(int argc, char** args){
         // }
         
         sleep(1); 
-
     }
     return 0;
 }

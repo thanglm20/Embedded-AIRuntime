@@ -117,142 +117,79 @@ inline vector<VecLine> calMeshLine(vector<Point> startLine, vector<Point> endLin
     return listLine;
 }
 
+Oppose::Oppose(ViolationSettings settings) : Violation(settings){
 
-Oppose::Oppose()
-{
-    
-    this->m_detector = new VehicleDetector();
-    this->tracker = new ObjectTracking();
+    this->m_settings = getSettings().oppose;
+
+}
+Oppose::~Oppose(){
+
 }
 
-Oppose::Oppose(/* args */settingsOppose settings)
+STATUS Oppose::init()
 {
-    
-    this->m_detector = new VehicleDetector();
-    this->tracker = new ObjectTracking();
-}
-
-Oppose::~Oppose()
-{
-    if(this->m_detector) delete this->m_detector;
-    if(this->tracker) delete this->tracker;
-}
-
-
-
-int Oppose::init(settingsOppose settings)
-{
-    this->settings = settings;
     
     // cal linear equation of start line
-    this->factorStartLine = findEquationLine(this->settings.startLine);
+    this->m_factorStartLine = findEquationLine(this->m_settings.startLine);
     
     // check start line and end line are valid
-    if(( this->factorStartLine.A * this->settings.endLine.at(0).x + this->factorStartLine.B *
-        this->settings.endLine.at(0).y + this->factorStartLine.C) * 
-        (this->factorStartLine.A * this->settings.endLine.at(1).x + this->factorStartLine.B * 
-        this->settings.endLine.at(1).y + this->factorStartLine.C) < 0)
+    if(( this->m_factorStartLine.A * this->m_settings.endLine.at(0).x + this->m_factorStartLine.B *
+        this->m_settings.endLine.at(0).y + this->m_factorStartLine.C) * 
+        (this->m_factorStartLine.A * this->m_settings.endLine.at(1).x + this->m_factorStartLine.B * 
+        this->m_settings.endLine.at(1).y + this->m_factorStartLine.C) < 0)
         {
             LOG_FAIL("Start line and end line are not valid");
             return STATUS::INVALID_ARGS;
         }
     // get mesh line
-    this->settings.listLine = calMeshLine(this->settings.startLine, this->settings.endLine);
+    this->m_settings.listLine = calMeshLine(this->m_settings.startLine, this->m_settings.endLine);
 
     return STATUS::SUCCESS;
 }
-int Oppose::set(settingsOppose settings)
-{
-    this->settings = settings;
-    // cal linear equation of start line
-    this->factorStartLine = findEquationLine(this->settings.startLine);
-    
-    // check start line and end line are valid
-    if(( this->factorStartLine.A * this->settings.endLine.at(0).x + this->factorStartLine.B * 
-        this->settings.endLine.at(0).y + this->factorStartLine.C) * 
-        (this->factorStartLine.A * this->settings.endLine.at(1).x + this->factorStartLine.B * 
-        this->settings.endLine.at(1).y + this->factorStartLine.C) < 0)
-        {
-            LOG_FAIL("Start line and end line are not valid");
-            return STATUS::FAIL;
-        }
-    // get mesh line
-    this->settings.listLine = calMeshLine(this->settings.startLine, this->settings.endLine);
-    return STATUS::SUCCESS;
-}
-int Oppose::update(Mat& frame, vector<outDataOppose>& outData)
-{
+STATUS Oppose::process (const cv::Mat& frame, ObjectTracking* tracker, std::vector<TrackingTrace>& tracks){
+
     try
     {
         Mat img;
         frame.copyTo(img);
         int widthFrame = img.cols;
         int heightFrame = img.rows;
-        outData.clear();
-     
-        // detect
-        auto start = std::chrono::high_resolution_clock::now();    
-        std::vector<ObjectTrace> detected;
-		if(this->m_detector->run(img, detected, THRES_DETECT_VEHICLE) != STATUS::SUCCESS)
-        {
-            LOG_FAIL("Execute Anpr detector failed");
-            return STATUS::FAIL;
-        }
-        auto end = std::chrono::high_resolution_clock::now();    
-        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
-        // cout << "Time detect: " <<  duration.count() << endl;
-        // tracking
-        vector<TrackingTrace> tracks;
-        this->tracker->process(detected, tracks);
-        
-        //delete object which is abandoned
-        for(auto it = this->listTracked.begin(); it != this->listTracked.end();)
-        {
-            const int theId =  (*it).track_id;
-            const auto p = find_if(tracks.begin(), tracks.end(), 
-                                        [theId] ( const TrackingTrace& a ) { return (a.m_ID == theId);}); 
-            if (p == tracks.end() && it != this->listTracked.end())
-                it = this->listTracked.erase(it);                
-            else 
-                it++;
-        }
+  
         // check opposition
         for (auto &track: tracks) 
         {
-            
             if(!track.isOutOfFrame)
             {
-
                 // draw box
-                rectangle(img, track.m_rect, Scalar(255, 255, 255), 1, 8);
-                char text[100];
-			    sprintf(text,"%d:%s", (int)track.m_ID, track.m_type.c_str());
-			    cv::putText(img, text, cv::Point(track.m_rect.x, track.m_rect.y), FONT_HERSHEY_SIMPLEX, 1.0, cv::Scalar(255, 255, 255), 1);
+                // rectangle(img, track.m_rect, Scalar(255, 255, 255), 1, 8);
+                // char text[100];
+			    // sprintf(text,"%d:%s", (int)track.m_ID, track.m_type.c_str());
+			    // cv::putText(img, text, cv::Point(track.m_rect.x, track.m_rect.y), FONT_HERSHEY_SIMPLEX, 1.0, cv::Scalar(255, 255, 255), 1);
                 
                 // if object is not in list of allowed, then abort
-                if(find(this->settings.allowedObjects.begin(), this->settings.allowedObjects.end(), track.m_type) 
-                != this->settings.allowedObjects.end())
+                if(find(this->m_settings.allowedObjects.begin(), this->m_settings.allowedObjects.end(), track.m_type) 
+                != this->m_settings.allowedObjects.end())
                     continue;
 
                 // find object in tracked list                 
                 int theId = track.m_ID;
-                const auto p = find_if(this->listTracked.begin(), this->listTracked.end(), [theId] (const outDataOppose& a) {return theId == a.track_id;});
+                const auto p = find_if(this->m_listTracked.begin(), this->m_listTracked.end(), [theId] (const outDataOppose& a) {return theId == a.track_id;});
                 // if found
-                if(p != this->listTracked.end())
+                if(p != this->m_listTracked.end())
                 {
-                    int i = distance(this->listTracked.begin(), p);
-                    this->listTracked[i].rect = track.m_rect;
+                    int i = distance(this->m_listTracked.begin(), p);
+                    this->m_listTracked[i].rect = track.m_rect;
                     // check start 
-                    for(int c =  this->listTracked[i].indexFirstLine + 1; c < this->settings.listLine.size(); c++)
+                    for(int c =  this->m_listTracked[i].indexFirstLine + 1; c < this->m_settings.listLine.size(); c++)
                     {
-                        VecLine lineCheck = this->settings.listLine[c];
+                        VecLine lineCheck = this->m_settings.listLine[c];
                         Point2f tail((float) lineCheck.tail.x/widthFrame, (float) lineCheck.tail.y/heightFrame);
                         Point2f head((float) lineCheck.head.x/widthFrame, (float) lineCheck.head.y/heightFrame); 
-                        int direction = this->tracker->checkCrossline(track, widthFrame, heightFrame, RoadLine(tail, head, 0));
-                        if(direction == this->listTracked[i].direction)
+                        int direction = tracker->checkCrossline(track, widthFrame, heightFrame, RoadLine(tail, head, 0));
+                        if(direction == this->m_listTracked[i].direction)
                         {
-                            this->listTracked[i].isNewEvent = true;
-                            this->listTracked[i].isTentative = false;
+                            this->m_listTracked[i].isNewEvent = true;
+                            this->m_listTracked[i].isTentative = false;
                             //rectangle(img, track.m_rect, Scalar(255, 0, 0), 5, 8);
                         }
                     }                 
@@ -261,14 +198,14 @@ int Oppose::update(Mat& frame, vector<outDataOppose>& outData)
                 else
                 {
                     // check start 
-                    for(int c = 0; c < this->settings.listLine.size(); c++)
+                    for(int c = 0; c < this->m_settings.listLine.size(); c++)
                     {
-                        VecLine lineCheck = this->settings.listLine[c];
+                        VecLine lineCheck = this->m_settings.listLine[c];
                         Point2f tail((float) lineCheck.tail.x/widthFrame, (float) lineCheck.tail.y/heightFrame);
                         Point2f head((float) lineCheck.head.x/widthFrame, (float) lineCheck.head.y/heightFrame); 
-                        int direction = this->tracker->checkCrossline(track, widthFrame, heightFrame, RoadLine(tail, head, 0));        
+                        int direction = tracker->checkCrossline(track, widthFrame, heightFrame, RoadLine(tail, head, 0));        
                         LinearEquationStartLine lineDirection = findEquationLine(vector<Point>{lineCheck.tail,lineCheck.head});      
-                        if(direction  && checkDirection(lineDirection, track.m_trace[track.m_trace.size() - 1], this->settings.endLine.at(0))) 
+                        if(direction  && checkDirection(lineDirection, track.m_trace[track.m_trace.size() - 1], this->m_settings.endLine.at(0))) 
                         {
                             // cout << "DIR: " << direction << ", ID: " << track.m_ID << ", Position: " << track.m_trace[track.m_trace.size() - 1] << endl;
                             line(img, lineCheck.tail, lineCheck.head, Scalar( 0, 255, 255), 3, LINE_AA);
@@ -280,7 +217,7 @@ int Oppose::update(Mat& frame, vector<outDataOppose>& outData)
                             out.rect = track.m_rect;
                             out.label = track.m_type;
                             out.isTentative = true;                        
-                            this->listTracked.push_back(out);
+                            this->m_listTracked.push_back(out);
                         }
                     }                    
                 }
@@ -288,37 +225,35 @@ int Oppose::update(Mat& frame, vector<outDataOppose>& outData)
             else
             {
                 const int theId =  track.m_ID;
-                const auto p = find_if(this->listTracked.begin(), this->listTracked.end(), 
+                const auto p = find_if(this->m_listTracked.begin(), this->m_listTracked.end(), 
                                         [theId] ( const outDataOppose& a ) { return (a.track_id == theId);});                         
-                if (p != this->listTracked.end()) 
+                if (p != this->m_listTracked.end()) 
                 {
-                    int dist = distance(this->listTracked.begin(), p);
-                    this->listTracked[dist].isOutOfFrame = true;
+                    int dist = distance(this->m_listTracked.begin(), p);
+                    this->m_listTracked[dist].isOutOfFrame = true;
                     
                 }
             } 
         }
         // abort object out of frame 
-        for(auto out : this->listTracked)
-            if(!out.isOutOfFrame)
-                outData.push_back(out);
+        // for(auto out : this->m_listTracked)
+        //     if(!out.isOutOfFrame)
+        //         outData.push_back(out);
 
         //draw line
-        for(int i = 0; i < this->settings.listLine.size(); i++)
-            line(img, this->settings.listLine[i].tail, this->settings.listLine[i].head, Scalar( 0, 0, 255), 1, LINE_AA);     
+        // for(int i = 0; i < this->m_settings.listLine.size(); i++)
+        //     line(img, this->m_settings.listLine[i].tail, this->m_settings.listLine[i].head, Scalar( 0, 0, 255), 1, LINE_AA);     
 
-        cv::putText(img, "START", this->settings.startLine.at(0), FONT_HERSHEY_DUPLEX, 1.0, cv::Scalar(0, 0, 255), 1);
-        line(img, this->settings.startLine.at(0), this->settings.startLine.at(1) , Scalar( 0, 0, 255), 2, LINE_AA);
-        cv::putText(img, "END", this->settings.endLine.at(0), FONT_HERSHEY_DUPLEX, 1.0, cv::Scalar(0, 0, 255), 1);
-        line(img, this->settings.endLine.at(0), this->settings.endLine.at(1) , Scalar( 0, 0, 255), 2, LINE_AA);
-
-        frame = img;
+        // cv::putText(img, "START", this->m_settings.startLine.at(0), FONT_HERSHEY_DUPLEX, 1.0, cv::Scalar(0, 0, 255), 1);
+        // line(img, this->m_settings.startLine.at(0), this->m_settings.startLine.at(1) , Scalar( 0, 0, 255), 2, LINE_AA);
+        // cv::putText(img, "END", this->m_settings.endLine.at(0), FONT_HERSHEY_DUPLEX, 1.0, cv::Scalar(0, 0, 255), 1);
+        // line(img, this->m_settings.endLine.at(0), this->m_settings.endLine.at(1) , Scalar( 0, 0, 255), 2, LINE_AA);
+        
         //imshow("Oppose", img); 
     }
     catch(const std::exception& e)
     {
         std::cerr << e.what() << '\n';
     }
-    
-    return STATUS::SUCCESS;
+return STATUS::SUCCESS;
 }

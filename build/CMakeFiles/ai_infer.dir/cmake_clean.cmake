@@ -53,6 +53,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Anpr/PaddleOCR-Linux-x64/utility.cpp.o.d"
   "CMakeFiles/ai_infer.dir/src/AiEngines/ITS/TrafficManager.cpp.o"
   "CMakeFiles/ai_infer.dir/src/AiEngines/ITS/TrafficManager.cpp.o.d"
+  "CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o"
+  "CMakeFiles/ai_infer.dir/src/AiEngines/ITS/Violation/Oppose.cpp.o.d"
   "CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o"
   "CMakeFiles/ai_infer.dir/src/examples/Anpr.cpp.o.d"
   "CMakeFiles/ai_infer.dir/src/examples/DecoderThread.cpp.o"
