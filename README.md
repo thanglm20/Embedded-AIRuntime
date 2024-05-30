@@ -1,5 +1,6 @@
 # Introduction
-	Branch master
+	This project implement and deploy many embedded AI framework for edge devices, such as: NCNN, Paddle, MNN, SNPE, and Tensorflow lite, ...
+ 	Also, develop some tasks: object detection, auto plate recognition, OCR, object tracking.
 # Requirements
 1. paddle-lite 2.9
 	 
